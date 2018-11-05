@@ -120,7 +120,7 @@
                     {
                         <div>
 
-                            <button class="btn btn-secondary btn-block btn-cat" role="group"  type="button">@c.CategoryTitle</button>
+                            <button class="btn btn-secondary btn-block btn-cat" role="group"  type="button"   onclick="@("window.location.href='" + @Url.Action("Index", "Admin",new { id = c.CategoryId}) + "'")">@c.CategoryTitle</button>
                         </div>
                     }
                 </nav>
@@ -143,76 +143,6 @@
             </div>
         </div>
     </div>
-    @*<div>
-            <img src="~/images/11.jpg" style="width: 800px;height: 200px;" />
-            <img src="~/images/12.jpg" style="width: 800px;height: 200px;" />
-            <img src="~/images/grooming.jpg" style="width: 800px;height: 200px;" />
-            <img src="~/images/bbqnation.png" style="width: 800px;height: 200px;" />
-            <img src="~/images/beastbbq.jpg" style="width: 800px;height: 200px;" />
-            <img src="~/images/businessminds.jpg" style="width: 800px;height: 200px;" />
-            <img src="~/images/culinaryfood.jpg" style="width: 800px;height: 200px;" />
-            <img src="~/images/fantasy.jpg" style="width: 800px;height: 200px;" />
-            <img src="~/images/fitnessfreak.jpg" style="width: 800px;height: 200px;" />
-            <img src="~/images/fun and play book.jpg" style="width: 800px;height: 200px;" />
-        </div>*@
-    @*<div class=" col-md-12">
-            <div class="card">
-                <div class="row text-center text-lg-left">
-                    <div class="card rounded mt-20 " style="width: 18rem; padding: 0 8px;clear: both;">
-                        <img src="~/images/11.jpg" style="width: 1000px;height: 1500px;" />
-                    </div>
-                </div>
-                <div class="row text-center text-lg-left">
-                    <div class="card rounded mt-20 " style="width: 18rem; padding: 0 8px;clear: both;">
-                        <img src="~/images/12.jpg" style="width: 1000px;height: 1500px;" />
-                    </div>
-                </div>
-                <div class="row text-center text-lg-left">
-                    <div class="card rounded mt-20 " style="width: 18rem; padding: 0 8px;clear: both;">
-                        <img src="~/images/grooming.jpg" style="width: 1000px;height: 1500px;" />
-                    </div>
-                </div>
-                <div class="row text-center text-lg-left">
-                    <div class="card rounded mt-20 " style="width: 18rem; padding: 0 8px;clear: both;">
-                        <img src="~/images/bbqnation.png" style="width: 1000px;height: 1500px;" />
-                    </div>
-                </div>
-                <div class="row text-center text-lg-left">
-                    <div class="card rounded mt-20 " style="width: 18rem; padding: 0 8px;clear: both;">
-                        <img src="~/images/beastbbq.jpg" style="width: 1000px;height: 1500px;" />
-                      </div>
-                </div>
-            </div>
-        </div>*@
-
-    @*@foreach (var item in book)
-        {
-            <div>
-                <img src="@item.Image" style="width:100px;height:150px" />
-            </div>
-        }*@
-    @*@foreach (var item in book)
-        {
-
-            <div class=" col-md-12">
-                <div class="card mb-4 shadow-sm">
-                    <div class="row text-center text-lg-left">
-
-                        <div class="card rounded mt-20 " style="width: 18rem; padding: 0 8px;display: table;clear: both;">
-                            <img class="card-img-top" src="@item.Image" alt="Card image cap" style="width: 100px;height: 150px;">
-                            <div class="card-body">
-                                <p class="card-text">The world is a book, and those who do not travel read only a page.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group">
-                                        <button type="button" class="btn btn-sm btn-group-primary">View</button>
-                                    </div>
-                                    <small class="text-muted">@item.BookId</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        }*@
+  
 </body>
 </html>

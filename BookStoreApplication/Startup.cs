@@ -60,6 +60,9 @@ namespace BookStoreApplication
                 routes.MapRoute(
                   name: "ViewBook",
                  template: "{controller=Book}/{action=ViewBook}/{id?}");
+                routes.MapRoute(
+                 name: "SearchByCat",
+                template: "{controller=Book}/{action=SearchByCat}/{id?}");
             });
         }
     }

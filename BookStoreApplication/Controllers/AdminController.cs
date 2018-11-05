@@ -27,8 +27,12 @@ namespace BookStoreApplication.Controllers
             this.log = log;
             //service = new HomeService(this.context);
         }
-        public IActionResult Index()
+        [HttpGet][HttpPost]
+        public IActionResult Index(int id)
         {
+            List<Book> AllBookList;
+
+
             try
             {
                 log.LogInformation("Executing GetBooks method");
@@ -39,11 +43,19 @@ namespace BookStoreApplication.Controllers
                 log.LogCritical(e.Message);
                 log.LogInformation("Executed GetBooks Method..");
             }
-            //var resultlist = serviceBook.SelectCategory();
-            //SelectList list = new SelectList(resultlist, "CategoryId", "CategoryTitle");
+ 
+            if (id>0)
+            {
+                return View();
+            }
+            else
+            {
+                AllBookList = serviceBook.GetAllBooks();
+                return View(AllBookList);
+            }
             ViewData["Categories"] = serviceBook.SelectCategory();
-            List<Book> AllBookList = serviceBook.GetAllBooks();
-            return View(AllBookList);
+          
+          
         }
         public IActionResult Register()
         {
