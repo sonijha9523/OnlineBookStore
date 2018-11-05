@@ -139,6 +139,22 @@ namespace BookStoreApplication.Models
                 return null; ;
 
         }
+        public List<Book> GetAllBookById(int id)
+        {
+            HttpResponseMessage message = client.PostAsync("BookService/GetAllBookByCat/?id=" + id, null).Result;
+
+            if (message.IsSuccessStatusCode == true)
+            {
+                string json = message.Content.ReadAsStringAsync().Result.ToString();
+                List<Book> obj = JsonConvert.DeserializeObject<List<Book>>(json);
+                return obj;
+            }
+            else
+                return null; ;
+
+        }
+
+
     }
 
 
