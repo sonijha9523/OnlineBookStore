@@ -46,11 +46,5 @@ namespace BookStoreWebService.Models
             var result = (from b in context.Book where b.BookId == id select b).ToList();
             return result;
         }
-        public List<Book> GetAllBookByCat(int id)
-        {
-            var result = (from b in context.Book where b.CategoryId== id select b).ToList();
-            return result;
-
-        }
     }
 }

@@ -43,19 +43,17 @@ namespace BookStoreApplication.Controllers
                 log.LogCritical(e.Message);
                 log.LogInformation("Executed GetBooks Method..");
             }
-            ViewData["Categories"] = serviceBook.SelectCategory();
-
+ 
             if (id>0)
             {
-                AllBookList = serviceBook.GetAllBookById(id);
-                return View(AllBookList);
+                return View();
             }
             else
             {
                 AllBookList = serviceBook.GetAllBooks();
                 return View(AllBookList);
             }
-            
+            ViewData["Categories"] = serviceBook.SelectCategory();
           
           
         }

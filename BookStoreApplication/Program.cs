@@ -14,6 +14,7 @@ namespace BookStoreApplication
     {
         public static void Main(string[] args)
         {
+            int x = 1200;
             CreateWebHostBuilder(args).Build().Run();
         }
 
