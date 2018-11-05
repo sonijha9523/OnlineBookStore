@@ -42,25 +42,6 @@ C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreWebServi
 C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.csproj.CopyComplete
 C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.dll
 C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.pdb
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebServiceTests.deps.json
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebServiceTests.runtimeconfig.json
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebServiceTests.runtimeconfig.dev.json
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebServiceTests.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebServiceTests.pdb
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.csprojAssemblyReference.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.csproj.CoreCompileInputs.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.AssemblyInfoInputs.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.AssemblyInfo.cs
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.csproj.CopyComplete
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.pdb
 D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll

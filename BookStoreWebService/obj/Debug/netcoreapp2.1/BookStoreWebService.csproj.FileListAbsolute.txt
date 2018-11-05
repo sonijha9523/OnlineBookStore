@@ -117,23 +117,6 @@ C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreWebServi
 C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.csproj.CopyComplete
 C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.dll
 C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.pdb
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.deps.json
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.runtimeconfig.json
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.runtimeconfig.dev.json
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.csprojAssemblyReference.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.csproj.CoreCompileInputs.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.RazorAssemblyInfo.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.RazorAssemblyInfo.cs
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.AssemblyInfoInputs.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.AssemblyInfo.cs
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.RazorTargetAssemblyInfo.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.csproj.CopyComplete
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.pdb
 D:\OnlineBookStore\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.deps.json
 D:\OnlineBookStore\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.runtimeconfig.json
 D:\OnlineBookStore\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.runtimeconfig.dev.json
@@ -151,3 +134,20 @@ D:\OnlineBookStore\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebServi
 D:\OnlineBookStore\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.csproj.CopyComplete
 D:\OnlineBookStore\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.dll
 D:\OnlineBookStore\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.pdb
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.deps.json
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.runtimeconfig.json
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.runtimeconfig.dev.json
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.csprojAssemblyReference.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.csproj.CoreCompileInputs.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.RazorAssemblyInfo.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.RazorAssemblyInfo.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.AssemblyInfoInputs.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.AssemblyInfo.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.RazorTargetAssemblyInfo.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.csproj.CopyComplete
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebService\obj\Debug\netcoreapp2.1\BookStoreWebService.pdb
