@@ -59,7 +59,13 @@ namespace BookStoreWebService.Controllers
            List< Book> obj = service.GetBookById(id);
             return obj;
         }
-      
+      [HttpPost]
+      [Route("GetAllBookByCat")]
+        public List<Book> GetAllBookByCat(int id)
+        {
+            List<Book> obj = service.GetAllBookByCat(id);
+            return obj;
+        }
 
     }
 }
