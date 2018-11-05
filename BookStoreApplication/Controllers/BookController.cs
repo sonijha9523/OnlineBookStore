@@ -13,8 +13,7 @@ using WebApplication2.Models;
 
 namespace BookStoreApplication.Controllers
 {
-    //ghjghjsdfs
-  //sdghagdh
+ 
 
     public class BookController : Controller
     {
