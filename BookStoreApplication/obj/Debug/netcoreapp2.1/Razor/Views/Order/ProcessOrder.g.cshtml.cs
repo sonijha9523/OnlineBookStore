@@ -66,12 +66,12 @@ using BookStoreApplication.Models;
             WriteLiteral("\r\n<h2>ProcessOrder</h2>\r\n");
             EndContext();
             BeginContext(193, 1665, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a0da2e9e0874c13a17afceaa648898a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4b6d048855fe45afa65a8e486a52207c", async() => {
                 BeginContext(257, 19, true);
                 WriteLiteral("\r\n    <p>\r\n        ");
                 EndContext();
                 BeginContext(276, 36, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa6383182c75491dadae7f669f17ea2d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d20f2d3d594470fb57555aff95fc8af", async() => {
                     BeginContext(299, 9, true);
                     WriteLiteral("View Cart");
                     EndContext();

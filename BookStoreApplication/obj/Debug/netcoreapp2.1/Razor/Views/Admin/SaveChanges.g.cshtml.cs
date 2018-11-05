@@ -119,7 +119,7 @@ WriteAttributeValue("", 1106, obj.BookQuantity, 1106, 17, false);
             WriteLiteral("    </table>>\r\n</div>\r\n");
             EndContext();
             BeginContext(1304, 51, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da61f24e019a4cf1aa3af8e7cde9d624", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e97bd3d77fe043fd9803fd1976f348f2", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

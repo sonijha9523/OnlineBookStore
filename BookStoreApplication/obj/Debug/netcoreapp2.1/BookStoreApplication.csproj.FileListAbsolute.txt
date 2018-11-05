@@ -427,3 +427,4 @@ C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookS
 C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
 C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
 C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\ViewBook.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\Pay.g.cshtml.cs

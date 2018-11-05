@@ -99,17 +99,17 @@ Write(ViewData["Message"]);
             WriteLiteral("</h3>\r\n\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-lg-3\"></div>\r\n    <div class=\"col-lg-5\">\r\n        ");
             EndContext();
             BeginContext(320, 638, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "941fec6993ca49c9a772e022a9de6742", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "af3c434203be4c0aa26a7306057b2042", async() => {
                 BeginContext(387, 56, true);
                 WriteLiteral("\r\n            <div class=\"form-group\">\r\n                ");
                 EndContext();
                 BeginContext(443, 200, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "07bf4307b5f9440496371f799b264981", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9eaf2b890ea94957bf96ad7d338613c2", async() => {
                     BeginContext(531, 22, true);
                     WriteLiteral("\r\n                    ");
                     EndContext();
                     BeginContext(553, 63, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a8d8edeeac7843d88fef5a11e880983c", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cd418198965a45819e872486a201cf04", async() => {
                         BeginContext(588, 19, true);
                         WriteLiteral("--Select Category--");
                         EndContext();
