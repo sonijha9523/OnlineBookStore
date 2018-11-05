@@ -61,3 +61,22 @@ C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookS
 C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.csproj.CopyComplete
 C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.dll
 C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.pdb
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebServiceTests.deps.json
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebServiceTests.runtimeconfig.json
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebServiceTests.runtimeconfig.dev.json
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebServiceTests.dll
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebServiceTests.pdb
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+D:\OnlineBookStore\BookStoreWebServiceTests\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+D:\OnlineBookStore\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.csprojAssemblyReference.cache
+D:\OnlineBookStore\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.csproj.CoreCompileInputs.cache
+D:\OnlineBookStore\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.AssemblyInfoInputs.cache
+D:\OnlineBookStore\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.AssemblyInfo.cs
+D:\OnlineBookStore\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.csproj.CopyComplete
+D:\OnlineBookStore\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.dll
+D:\OnlineBookStore\BookStoreWebServiceTests\obj\Debug\netcoreapp2.1\BookStoreWebServiceTests.pdb

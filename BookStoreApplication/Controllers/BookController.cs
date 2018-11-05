@@ -127,6 +127,22 @@ namespace BookStoreApplication.Controllers
             return View("ViewBook",obj);
 
         }
-        
+        [ErrorFilter]
+        public IActionResult AllBook()
+        {
+            try
+            {
+                log.LogInformation("Executing GetBooks method");
+                log.LogInformation("This is a Test Message");
+            }
+            catch (Exception e)
+            {
+                log.LogCritical(e.Message);
+                log.LogInformation("Executed GetBooks Method..");
+            }
+            List<Book> AllBookList = serviceBook.GetAllBooks();
+            return View(AllBookList);
+        }
+
     }
 }
