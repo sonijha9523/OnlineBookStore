@@ -64,20 +64,6 @@ C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreLibrary\
 C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.csproj.CopyComplete
 C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.dll
 C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.pdb
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\BookStoreLibrary.deps.json
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Abstractions.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Core.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Abstractions.xml
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Core.xml
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.csprojAssemblyReference.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.csproj.CoreCompileInputs.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.AssemblyInfoInputs.cache
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.AssemblyInfo.cs
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.csproj.CopyComplete
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.dll
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.pdb
 D:\OnlineBookStore\BookStoreLibrary\bin\Debug\netcoreapp2.1\BookStoreLibrary.deps.json
 D:\OnlineBookStore\BookStoreLibrary\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
 D:\OnlineBookStore\BookStoreLibrary\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
@@ -87,3 +73,16 @@ D:\OnlineBookStore\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.Ass
 D:\OnlineBookStore\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.AssemblyInfo.cs
 D:\OnlineBookStore\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.dll
 D:\OnlineBookStore\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\BookStoreLibrary.deps.json
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Core.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Http.Abstractions.xml
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\bin\Debug\netcoreapp2.1\Microsoft.AspNetCore.Mvc.Core.xml
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.AssemblyInfoInputs.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.AssemblyInfo.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.csproj.CopyComplete
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.pdb
