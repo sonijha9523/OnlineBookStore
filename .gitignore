@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/OnlineBookStoreSystem/v15/Server/sqlite3
+/BookStoreWebServiceTests/obj/Debug/netcoreapp2.1
+/BookStoreLibrary/obj/Debug/netcoreapp2.1
