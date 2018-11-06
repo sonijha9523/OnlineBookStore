@@ -1,0 +1,100 @@
+﻿@model IEnumerable<BookStoreApplication.Models.ProcessOrder>
+@{
+    ViewData["Title"] = "ProcessOrder";
+    var list = (List<ProcessOrder>)ViewData["products"];
+}
+
+<h2>ProcessOrder</h2>
+
+<p>
+    <a asp-action="Create">View Cart</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.BookId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.sum)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @for (var i = 0; i < list.Count; i++)
+        {
+            <tr>
+
+                <td>
+                    <div>
+                        @Html.DisplayFor(modelItem => list[i].BookId)
+                    </div>
+
+                </td>
+                <td>
+                    <div>
+                        @Html.DisplayFor(modelItem => list[i].Title)
+                       
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        @Html.DisplayFor(modelItem => list[i].Price)
+                       
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        @Html.DisplayFor(modelItem => list[i].Quantity)
+                      
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        @Html.DisplayFor(modelItem => list[i].sum)
+                       
+                    </div>
+                </td>
+
+
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+
+<form asp-action="Payment" asp-controller="Order" method="post">
+    @for (var i = 0; i < list.Count; i++)
+    {
+        <div class="container">
+            <div class="row">
+                <input type="hidden" name="[@i].BookId" value="@list[i].BookId" />
+                <input type="hidden" name="[@i].Title" value="@list[i].Title" />
+                <input type="hidden" name="[@i].Price" value="@list[i].Price" />
+                <input type="hidden" name="[@i].Quantity" value="@list[i].Quantity" />
+
+
+
+            </div>
+        </div>
+
+    }
+    <div>
+        <input type="submit" class="btn-dark" value="Proceed To Pay" />
+    </div>
+
+</form>

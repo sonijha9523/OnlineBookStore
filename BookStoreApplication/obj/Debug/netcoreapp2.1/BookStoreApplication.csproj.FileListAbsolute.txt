@@ -1,0 +1,483 @@
+D:\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+D:\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+D:\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+D:\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+D:\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+D:\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\geeta\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+\\192.168.252.250\Share Folder\merge\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AddBook.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Admin.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\GetBooks.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\SaveChanges.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\SearchBooks.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Product\GetCategory.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\newmege\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AddBook.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Admin.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\GetBooks.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\SaveChanges.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\GetCategory.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\SearchBooks.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\5th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AddBook.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Admin.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\GetBooks.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\SaveChanges.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\GetCategory.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\SearchBooks.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Payment\Index.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+\\192.168.252.250\Share Folder\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AddBook.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Admin.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\GetBooks.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\SaveChanges.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\GetCategory.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\SearchBooks.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Payment\Index.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\refactor\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AddBook.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Admin.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\GetBooks.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\SaveChanges.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\GetCategory.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\SearchBooks.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Payment\Index.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+C:\Users\Training\Desktop\8th oct\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AddBook.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Admin.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\GetBooks.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\SaveChanges.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\GetCategory.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\SearchBooks.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\ProcessOrder.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\ViewCart.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Payment\Index.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ErrorView.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+C:\Users\Training\Desktop\8th oct - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+D:\OnlineBookStore\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\About.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AddBook.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Admin.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Contact.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\GetBooks.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\LoginAdmin.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\SaveChanges.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\GetCategory.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\SearchBooks.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\ViewBook.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\Pay.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\Payment.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\ProcessOrder.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\ViewCart.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ErrorView.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\AllBook.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.deps.json
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.json
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.runtimeconfig.dev.json
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.pdb
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreWebService.pdb
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\bin\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csprojAssemblyReference.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CoreCompileInputs.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorAssemblyInfo.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfoInputs.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.AssemblyInfo.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.input.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.TagHelpers.output.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorCoreGenerate.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\About.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\AddBook.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Admin.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Contact.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\GetBooks.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Index.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Login.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\LoginAdmin.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\Register.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Admin\SaveChanges.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\AllBook.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\GetCategory.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\SearchBooks.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\ViewBook.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\Pay.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\Payment.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\ProcessOrder.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\ViewCart.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\ErrorView.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cache
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.RazorTargetAssemblyInfo.cs
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.Views.pdb
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
+C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
