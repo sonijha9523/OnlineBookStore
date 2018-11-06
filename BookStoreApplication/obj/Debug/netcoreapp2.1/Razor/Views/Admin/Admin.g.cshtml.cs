@@ -63,7 +63,7 @@ using BookStoreApplication.Models;
             WriteLiteral("\n<h2>Admin</h2>\n\n<html>\n");
             EndContext();
             BeginContext(63, 783, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "704f217a8859484d9ae83fa2ee275f26", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3127b3216f9549229ee1a332827a743a", async() => {
                 BeginContext(69, 1, true);
                 WriteLiteral("\n");
                 EndContext();
@@ -83,7 +83,7 @@ using BookStoreApplication.Models;
             WriteLiteral("\n");
             EndContext();
             BeginContext(847, 556, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cdfc34d3ae6d4c068caf8dbbdc57ce09", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "882c7f1faeef402fa712f50d0b4c3a47", async() => {
                 BeginContext(853, 33, true);
                 WriteLiteral("\n\n   \n\n    <button class=\"button\"");
                 EndContext();

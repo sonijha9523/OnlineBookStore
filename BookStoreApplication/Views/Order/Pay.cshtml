@@ -1,146 +1,299 @@
-﻿
+﻿@model IEnumerable<BookStoreApplication.Models.ProcessOrder>
+@{
+    ViewData["Title"] = "Pay";
+    var list = (List<ProcessOrder>)ViewData["products"];
+}
 @{
     Layout = null;
 }
 
-<!DOCTYPE html>
-
 <html>
 <head>
     <style>
-        .invoice-title h2, .invoice-title h3 {
-            display: inline-block;
+        /* Padding - just for asthetics on Bootsnipp.com */
+        body {
+            margin-top: 20px;
         }
 
-        .table > tbody > tr > .no-line {
-            border-top: none;
+        /* CSS for Credit Card Payment form */
+        .credit-card-box .panel-title {
+            display: inline;
+            font-weight: bold;
         }
 
-        .table > thead > tr > .no-line {
-            border-bottom: none;
+        .credit-card-box .form-control.error {
+            border-color: red;
+            outline: 0;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
         }
 
-        .table > tbody > tr > .thick-line {
-            border-top: 2px solid;
+        .credit-card-box label.error {
+            font-weight: bold;
+            color: red;
+            padding: 2px 8px;
+            margin-top: 2px;
         }
 
-        body#LoginForm {
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            padding: 10px;
+        .credit-card-box .payment-errors {
+            font-weight: bold;
+            color: red;
+            padding: 2px 8px;
+            margin-top: 2px;
         }
 
-        .form-heading {
-            color: #fff;
-            font-size: 23px;
+        .credit-card-box label {
+            display: block;
+        }
+        /* The old "center div vertically" hack */
+        .credit-card-box .display-table {
+            display: table;
         }
 
-        .panel h2 {
-            color: #444444;
-            font-size: 18px;
-            margin: 0 0 8px 0;
+        .credit-card-box .display-tr {
+            display: table-row;
         }
 
-        .panel p {
-            color: #777777;
-            font-size: 14px;
-            margin-bottom: 30px;
-            line-height: 24px;
+        .credit-card-box .display-td {
+            display: table-cell;
+            vertical-align: middle;
+            width: 50%;
+        }
+        /* Just looks nicer */
+        .credit-card-box .panel-heading img {
+            min-width: 180px;
         }
 
-        .login-form .form-control {
-            background: #f7f7f7 none repeat scroll 0 0;
-            border: 2px solid double;
-            border-radius: 4px;
-            font-size: 14px;
-            height: 50px;
-            line-height: 50px;
-        }
 
-        .main-div {
-            background: #ffffff none repeat scroll 0 0;
+        /*hr {
+            margin-bottom: 25px;
+        }*/
+
+        /*div.container {
+            width: 643px;
+            margin: 50px auto;
+            font-family: 'Droid Serif', serif;
+            position: relative;
+        }*/
+
+        div.main {
+            width: 320px;
+            padding: 10px 60px 15px;
+            box-shadow: 0 0 10px;
             border-radius: 2px;
-            margin: 10px auto 30px;
-            max-width: 38%;
-            padding: 50px 70px 70px 71px;
+            font-size: 13px;
+            margin: 0 auto 50px;
         }
 
-        .login-form .form-group {
-            margin-bottom: 10px;
+        /*span {
+            margin-right: 17px;
+            font-size: 15px;
+        }*/
+
+        input[type=radio] {
+            margin: 10px 10px 0 10px;
+            transform: scale(2,2);
         }
 
-        .login-form {
-            text-align: center;
-        }
-
-        .forgot a {
-            color: #777777;
-            font-size: 14px;
-            text-decoration: underline;
-        }
-
-        .login-form .btn.btn-primary {
-            border-color: black;
-            color: #ffffff;
-            font-size: 14px;
-            width: 100%;
-            height: 50px;
-            line-height: 50px;
-            padding: 0;
-        }
-
-        .forgot {
-            text-align: left;
-            margin-bottom: 30px;
-        }
-
-        .botto-text {
-            color: #ffffff;
-            font-size: 14px;
-            margin: auto;
-        }
+        /*label {
+            color: #464646;
+            font-size: 15px;
+            font-weight: bold;
+        }*/
 
 
-
-        .back {
-            text-align: left;
-            margin-top: 10px;
-        }
-
-            .back a {
-                color: #444444;
-                font-size: 13px;
-                text-decoration: none;
-            }
     </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="~/lib/jquery/dist/jquery.js"></script>
 
-    <meta name="viewport" content="width=device-width" />
-    <title>Pay</title>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/1.2.3/jquery.payment.min.js"></script>
+    <!-- If you're using Stripe for payments -->
+    <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 </head>
-<body class="login-form">
-    <br /><br /><br>
-    <div class="card container-fluid text-center" style="width:40rem">
-        <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Disabled</a>
-                </li>
-            </ul>
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <!-- You can make it whatever width you want. I'm making it full width
+                 on <= small devices and 4/12 page width on >= medium devices -->
+            <div class="col-xs-12 col-md-4">
+
+                    
+                        <div class="main">
+                            <h2>Payment Options</h2>
+                            <form action="#" method="post" id="form">
+
+                                <input type="radio" name="first" value="COD" id="enable" checked>
+                               
+                                <label>Cash On Delivery </label>
+                                <br/>
+                                <input type="radio" name="first" value="CC" id="disable" >
+                               
+                                <label>Credit Card</label>
+                                <br/>
+                                <input type="radio" name="first" value="DC" id="disable" >
+                        
+                                <label>Debit Card</label>
+                            </form>
+                        </div>
+                    
+                
+
+                <!-- CREDIT CARD FORM STARTS HERE -->
+                <div class="panel panel-default credit-card-box" id="divcard">
+                    <div class="panel-heading display-table">
+                        <div class="row display-tr">
+                            <h3 class="panel-title display-td">Payment Details</h3>
+                            <div class="display-td">
+                                <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" id="payment-form" method="POST" action="javascript:void(0);">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label for="cardNumber">CARD NUMBER</label>
+                                        <div class="input-group">
+                                            <input type="tel"
+                                                   class="form-control"
+                                                   name="cardNumber"
+                                                   placeholder="Valid Card Number"
+                                                   autocomplete="cc-number"
+                                                   required autofocus />
+                                            <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                        <label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+                                        <input type="tel"
+                                               class="form-control"
+                                               name="cardExpiry"
+                                               placeholder="MM / YY"
+                                               autocomplete="cc-exp"
+                                               required />
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <label for="cardCVC">CV CODE</label>
+                                        <input type="tel"
+                                               class="form-control"
+                                               name="cardCVC"
+                                               placeholder="CVC"
+                                               autocomplete="cc-csc"
+                                               required />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label for="couponCode">COUPON CODE</label>
+                                        <input type="text" class="form-control" name="couponCode" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <button class="subscribe btn btn-success btn-lg btn-block" type="button">Start Subscription</button>
+                                </div>
+                            </div>
+                            <div class="row" style="display:none;">
+                                <div class="col-xs-12">
+                                    <p class="payment-errors"></p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- CREDIT CARD FORM ENDS HERE -->
+
+
+            </div>
+
+            <div class="col-xs-12 col-md-8" style="font-size: 12pt; line-height: 2em;">
+                <div class="container card-deck bg-dark mb-3" style="width:50rem;">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title"><strong>Order Details</strong></h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-condensed">
+                                                <thead>
+                                                    <tr>
+                                                        <td><strong>ITEM</strong></td>
+                                                        <td class="text-center"><strong>PRICE</strong></td>
+                                                        <td class="text-center"><strong>QUANTITY</strong></td>
+                                                        <td class="text-right"><strong>TOTAL</strong></td>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- foreach ($order->lineItems as $line) or some such thing here -->
+
+
+                                                    @foreach (var item in list)
+                                                    {
+                                                        <tr>
+                                                            <td>@item.Title</td>
+                                                            <td class="text-center">@item.Price</td>
+                                                            <td class="text-center">@item.Quantity</td>
+                                                            <td class="text-right">@item.sum</td>
+                                                        </tr>
+                                                    }
+
+                                                    <tr>
+                                                        @{
+
+                                                            int total = 0;
+                                                            foreach (var item in list)
+                                                            {
+                                                                total = item.sum + total;
+                                                            }
+                                                            <td class="no-line"></td>
+                                                            <td class="no-line"></td>
+                                                            <td class="no-line text-center"><strong>Total</strong></td>
+                                                            <td class="no-line text-right">@total</td>
+                                                        }
+
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                        
+                   
+                </div>
+            </div>
+
         </div>
     </div>
 
+
+    <script>
+        $('#divcard').hide();
+        $('input[type=radio]').change(function (e) {
+            var val = e.target.value;
+            if (val == 'CC' || val == 'DC')
+                $('#divcard').show();
+            else
+                $('#divcard').hide();
+        });
+    </script>
 </body>
+
 </html>
+
+
+

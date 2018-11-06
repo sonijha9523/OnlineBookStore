@@ -66,7 +66,7 @@ using BookStoreApplication.Models;
             WriteLiteral("\n<h2>ProcessOrder</h2>\n\n<p>\n    ");
             EndContext();
             BeginContext(195, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da09481beb0c45989dfafd9d23b93bd5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aeb373002b66469994d308a1009b8690", async() => {
                 BeginContext(218, 9, true);
                 WriteLiteral("View Cart");
                 EndContext();
@@ -206,7 +206,7 @@ using BookStoreApplication.Models;
             WriteLiteral("\n    </tbody>\n</table>\n\n\n");
             EndContext();
             BeginContext(1851, 652, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ffd7caaa2fd946819fc41a1962f14e4c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6f05f636f284557b3ce3837b2719591", async() => {
                 BeginContext(1915, 1, true);
                 WriteLiteral("\n");
                 EndContext();

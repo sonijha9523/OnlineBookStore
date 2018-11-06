@@ -99,17 +99,17 @@ Write(ViewData["Message"]);
             WriteLiteral("</h3>\n\n\n<div class=\"row\">\n    <div class=\"col-lg-3\"></div>\n    <div class=\"col-lg-5\">\n        ");
             EndContext();
             BeginContext(305, 626, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9336fee573d34655a9275900c45d4133", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e95aab766245495b93591f0e333ccdd8", async() => {
                 BeginContext(372, 54, true);
                 WriteLiteral("\n            <div class=\"form-group\">\n                ");
                 EndContext();
                 BeginContext(426, 198, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b971b869e6894f34b2056f8e4e29f40b", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c07611aebea4eb8bee3921090118379", async() => {
                     BeginContext(514, 21, true);
                     WriteLiteral("\n                    ");
                     EndContext();
                     BeginContext(535, 63, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4af0241cf1a04a50a51e8ab68854c9b1", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b85ba718d8b84ce490bcc6f6540f13e4", async() => {
                         BeginContext(570, 19, true);
                         WriteLiteral("--Select Category--");
                         EndContext();

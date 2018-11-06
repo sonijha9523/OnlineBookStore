@@ -57,7 +57,7 @@ using BookStoreApplication.Models;
             WriteLiteral("\n\n<!DOCTYPE html>\n\n<html>\n");
             EndContext();
             BeginContext(86, 209, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "802a77051ade4a67b78f1335c6591fa8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ebec09ae5c4e4995ba557fac95cc9f76", async() => {
                 BeginContext(92, 196, true);
                 WriteLiteral("\n    <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\">\n\n    <meta name=\"viewport\" content=\"width=device-width\" />\n    <title>ViewBook</title>\n");
                 EndContext();
@@ -77,7 +77,7 @@ using BookStoreApplication.Models;
             WriteLiteral("\n");
             EndContext();
             BeginContext(296, 2429, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0381073416704fb6a14a037b750807d1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3f5f0c01e0e74446bb0f22c77b35840b", async() => {
                 BeginContext(302, 61, true);
                 WriteLiteral("\n    <div class=\"container-fluid card\" style=\"width:40rem;\">\n");
                 EndContext();
