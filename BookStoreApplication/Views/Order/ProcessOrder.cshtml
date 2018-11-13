@@ -1,84 +1,75 @@
-﻿@model IEnumerable<BookStoreApplication.Models.ProcessOrder>
+﻿@using BookStoreLibrary;
 @{
     ViewData["Title"] = "ProcessOrder";
-    var list = (List<ProcessOrder>)ViewData["products"];
+    // var list = (List<ProcessOrder>)ViewData["products"];
+    var list = (ProductViewModelCart[])ViewData["products"];
 }
-
 <h2>ProcessOrder</h2>
-
 <p>
     <a asp-action="Create">View Cart</a>
 </p>
 <table class="table">
     <thead>
         <tr>
-
             <th>
-                @Html.DisplayNameFor(model => model.BookId)
+                BookId
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                Title
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                Price
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Quantity)
+                Quantity
             </th>
-
             <th>
-                @Html.DisplayNameFor(model => model.sum)
+                sum
             </th>
-
         </tr>
     </thead>
     <tbody>
-        @for (var i = 0; i < list.Count; i++)
+        @foreach (var item in list)
         {
             <tr>
+                <td>
+                    <div>
+                        @item.BookId
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        @item.Title
 
+                    </div>
+                </td>
                 <td>
                     <div>
-                        @Html.DisplayFor(modelItem => list[i].BookId)
+                        @item.Price
                     </div>
+                </td>
+                <td>
+                    <div>
+                        @item.Quantity
 
-                </td>
-                <td>
-                    <div>
-                        @Html.DisplayFor(modelItem => list[i].Title)
-                       
                     </div>
                 </td>
                 <td>
                     <div>
-                        @Html.DisplayFor(modelItem => list[i].Price)
-                       
+                        @string.Format("{0}", item.Quantity * item.Price)
                     </div>
                 </td>
-                <td>
-                    <div>
-                        @Html.DisplayFor(modelItem => list[i].Quantity)
-                      
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        @Html.DisplayFor(modelItem => list[i].sum)
-                       
-                    </div>
-                </td>
-
 
             </tr>
 
         }
-
     </tbody>
 </table>
-
-
-<form asp-action="Payment" asp-controller="Order" method="post">
-    @for (var i = 0; i < list.Count; i++)
+<div>
+    <input  class="btn-dark" value="Proceed To Pay" onclick="@("window.location.href='" + @Url.Action("Payment", "Order") + "'")" />
+</div>
+@*<form asp-action="Payment" asp-controller="Order" method="post">*@
+@*@for (var i = 0; i < list.Count; i++)
     {
         <div class="container">
             <div class="row">
@@ -92,9 +83,9 @@
             </div>
         </div>
 
-    }
-    <div>
-        <input type="submit" class="btn-dark" value="Proceed To Pay" />
-    </div>
+    }*@
+@*<div>
+            <input type="submit" class="btn-dark" value="Proceed To Pay" />
+        </div>
 
-</form>
+    </form>*@

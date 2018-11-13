@@ -23,6 +23,7 @@ namespace BookStoreApplication.Models
             client.BaseAddress = new Uri("http://localhost:64966/");
 
         }
+        
         public int AddRecord(Customer c)
         {
            
@@ -128,6 +129,35 @@ namespace BookStoreApplication.Models
             }
             else
                 return null; ;
+        }
+        public List<Book> ReorderLevel()
+        {
+
+            HttpResponseMessage message = client.PostAsync("AdminService/ReorderLevel", null).Result;
+
+            if (message.IsSuccessStatusCode == true)
+            {
+                string json = message.Content.ReadAsStringAsync().Result.ToString();
+                List<Book> book = JsonConvert.DeserializeObject<List<Book>>(json);
+                return book;
+            }
+            else
+                return null; ;
+        }
+        public int UpdateQuantity(ReorderLevelDetails[] r)
+        {
+            string json = JsonConvert.SerializeObject(r);
+            HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
+            HttpResponseMessage message = client.PostAsync("AdminService/UpdateQuantities", content).Result;
+            if (message.IsSuccessStatusCode == true)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+            
         }
     }
 }

@@ -33,6 +33,7 @@ namespace BookStoreWebService.Controllers
                 return Ok(result);
             }
         }
+       
         [HttpPost]
         [Route("Authentication")]
         public IActionResult Authentication(Credentials credentials)
@@ -76,6 +77,25 @@ namespace BookStoreWebService.Controllers
 
             List<Book> allbooks = service.AllBooks();
             return allbooks;
+
+        }
+        [HttpPost]
+        [Route("ReorderLevel")]
+        public List<Book> ReoderLevel()
+        {
+
+            List<Book> allbooks = service.ReorderLevel();
+            return allbooks;
+
+        }
+        [HttpPost]
+        [HttpGet]
+        [Route("UpdateQuantities")]
+        public int UpdateQuantity([FromBody]ReorderLevelDetails[] r)
+        {
+
+            int result = service.UpdateQuantity(r);
+            return 1;
 
         }
     }

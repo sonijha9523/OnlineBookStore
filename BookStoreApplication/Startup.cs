@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using System;
 using WebApplication2.Models;
 
 namespace BookStoreApplication
@@ -27,7 +28,9 @@ namespace BookStoreApplication
                 options.CheckConsentNeeded = context => false;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-            services.AddSession();
+            services.AddSession(opts=> {
+                opts.IdleTimeout = TimeSpan.FromMinutes(5);
+            });
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);

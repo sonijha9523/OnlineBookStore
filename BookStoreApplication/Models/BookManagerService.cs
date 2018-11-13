@@ -1,10 +1,12 @@
-﻿using BookStoreWebService.Models.BookDB;
+﻿using BookStoreLibrary;
+using BookStoreWebService.Models.BookDB;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace BookStoreApplication.Models
@@ -32,6 +34,7 @@ namespace BookStoreApplication.Models
             else
                 return null;
         }
+     
         public List<Book> GetAllBooks()
         {
 
@@ -154,7 +157,54 @@ namespace BookStoreApplication.Models
 
         }
 
+        //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        public void StoreFinalProductsInSession(ProductViewModelCart[] model)
+        {
+            context.Session.Remove("Cart");
+            string json = JsonConvert.SerializeObject(model);
+            context.Session.SetString("Cart",json);
+        }
+        public ProductViewModelCart[] GetFinalProductsFromSession()
+        {
+            string json=context.Session.GetString("Cart");
 
+            ProductViewModelCart[] products=JsonConvert.DeserializeObject<ProductViewModelCart[]>(json);
+            return products;
+        }
+        public int SaveDetails(ProductViewModelCart[] p,string PayMode)
+        {
+            string InvoiceId;
+            string Cid = context.Session.GetString("Customer");
+            FinalOrder order = new FinalOrder();
+            order.CustomerId = Convert.ToInt32(Cid);
+            order.PaymentMethod = PayMode;
+            order.products = p;
+            string json = JsonConvert.SerializeObject(order);
+            HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
+            HttpResponseMessage message = client.PostAsync("OrderService/AddOrder", content).Result;
+            if (message.IsSuccessStatusCode == true)
+            {
+                InvoiceId = message.Content.ReadAsStringAsync().Result;
+                return Convert.ToInt32(InvoiceId);
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        public List<Customer> GetCustomer(int CustomerId)
+        {
+            HttpResponseMessage message = client.PostAsync("OrderService/GetCustomer/?id=" + CustomerId, null).Result;
+
+            if (message.IsSuccessStatusCode == true)
+            {
+                string json = message.Content.ReadAsStringAsync().Result.ToString();
+                List<Customer> obj = JsonConvert.DeserializeObject<List<Customer>>(json);
+                return obj;
+            }
+            else
+                return null; ;
+        }
     }
 
 

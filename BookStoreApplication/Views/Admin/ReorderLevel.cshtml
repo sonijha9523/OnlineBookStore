@@ -1,0 +1,51 @@
+﻿@using BookStoreWebService.Models.BookDB
+@model BookStoreLibrary.ReorderLevelDetails[]
+@{
+    ViewData["Title"] = "ReorderLevel";
+    var list = (List<Book>)ViewData["Books"];
+    int x = 0;
+}
+
+    <div class="container">
+        <br />
+        <div class="table-striped table-bordered table-success">
+            <table>
+                <thead>
+
+                </thead>
+                <tbody>
+                    <form asp-action="UpdateQuantity" asp-controller="Admin" method="post" role="form">
+                        @for(var i=0;i<list.Count;i++)
+                        {
+                            <div class="container">
+                                <div class="row table-striped">
+                                    <div class="col-md-3 order-div ">
+                                        <img src="@list[i].Image" style="width:100px;height:130px" />
+                                    </div>
+                                    <div class="col-md-3 order-div ">
+                                        <br />
+                                        <h4>@list[i].BookTitle</h4>
+                                    </div>
+                                    <div class="col-md-3 order-div ">
+                                        <br />
+                                        <h4>@list[i].BookQuantity</h4>
+                                    </div>
+                                    <div class="col-xs-3 form-group">
+                                        <br /><br />
+                                        <input type="hidden" name="[@i].BookId" value="@list[i].BookId"/>
+                                        <input type="number" name="[@i].Quantity" class="form-control" id="quantity">
+                                    </div>
+                                </div>
+                            </div>
+
+                           
+                            
+                        }
+ <button type="submit" style="margin: auto; display: block" class="btn btn-primary">PLACE ORDER</button>
+
+                    </form>
+</tbody>
+            </table>
+        </div>
+    </div>
+  

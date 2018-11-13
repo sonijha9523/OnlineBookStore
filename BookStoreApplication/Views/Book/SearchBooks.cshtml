@@ -1,4 +1,4 @@
-﻿@using BookStoreApplication.Models;
+﻿@using BookStoreLibrary;
 @model ProductViewModel
 
 @{
@@ -58,12 +58,12 @@
 
                 </div>
 
-                <div class="col-md-2 order-div ">
-                    <input  value="VIEW DETAILS" class="btn btn-secondary"  onclick="@("window.location.href='" + @Url.Action("ViewBook", "Book",new { id = item.BookId }) + "'")"  /><br>
+                <div class="col-md-2 order-div " >
+                    <input  value="VIEW DETAILS" class="btn btn-success" style="width:auto"  onclick="@("window.location.href='" + @Url.Action("ViewBook", "Book",new { id = item.BookId }) + "'")"  />
 
                 </div>
                 <div class="col-md-2 order-div ">
-                    <input type="submit" value="ADD TO CART" class="btn btn-secondary" />
+                    <input type="submit" value="ADD TO CART" class="btn btn-success" />
 
                 </div>
                 <input type="hidden" asp-for="BookId" value="@item.BookId" />

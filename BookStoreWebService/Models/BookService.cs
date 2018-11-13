@@ -18,6 +18,14 @@ namespace BookStoreWebService.Models
         {
             context = new BookStoreDBContext();
         }
+        public int AddNewOrder(Orders order)
+        {
+
+            context.Orders.Add(order);
+            int result = context.SaveChanges();
+            return result;
+
+        }
         public List<Book> SearchBooks(SubCategory s)
         {       
             

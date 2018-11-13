@@ -1,7 +1,9 @@
-﻿@model IEnumerable<BookStoreApplication.Models.ProcessOrder>
+﻿@using BookStoreLibrary;
+@*@model IEnumerable<BookStoreApplication.Models.ProcessOrder>*@
 @{
     ViewData["Title"] = "Pay";
-    var list = (List<ProcessOrder>)ViewData["products"];
+    //var list = (List<ProcessOrder>)ViewData["products"];
+    var list = (ProductViewModelCart[])ViewData["products"];
 }
 @{
     Layout = null;
@@ -26,7 +28,12 @@
             outline: 0;
             box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
         }
-
+        #payment {
+            border-color: black;
+            border-collapse:collapse;
+            margin: 30px 30px 30px 30px;
+            padding: 30px 30px 30px 30px;
+        }
         .credit-card-box label.error {
             font-weight: bold;
             color: red;
@@ -62,19 +69,6 @@
         .credit-card-box .panel-heading img {
             min-width: 180px;
         }
-
-
-        /*hr {
-            margin-bottom: 25px;
-        }*/
-
-        /*div.container {
-            width: 643px;
-            margin: 50px auto;
-            font-family: 'Droid Serif', serif;
-            position: relative;
-        }*/
-
         div.main {
             width: 320px;
             padding: 10px 60px 15px;
@@ -112,36 +106,38 @@
     <!-- If you're using Stripe for payments -->
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 </head>
-<body>
+<body id="payment">
 
     <div class="container">
         <div class="row">
             <!-- You can make it whatever width you want. I'm making it full width
                  on <= small devices and 4/12 page width on >= medium devices -->
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-md-6">
 
-                    
-                        <div class="main">
-                            <h2>Payment Options</h2>
-                            <form action="#" method="post" id="form">
 
-                                <input type="radio" name="first" value="COD" id="enable" checked>
-                               
-                                <label>Cash On Delivery </label>
-                                <br/>
-                                <input type="radio" name="first" value="CC" id="disable" >
-                               
-                                <label>Credit Card</label>
-                                <br/>
-                                <input type="radio" name="first" value="DC" id="disable" >
-                        
-                                <label>Debit Card</label>
-                            </form>
+                <div class="main">
+                    <h3>PAYMENT OPTIONS</h3>
+                    <form asp-action="Success" asp-controller="Order" method="post" id="form">
+
+                        <input type="radio" name="PayMode" value="COD" id="enable" checked>
+
+                        <label>Cash On Delivery </label>
+                        <br />
+                        <input type="radio" name="PayMode" value="CC" id="disable">
+
+                        <label>Credit Card</label>
+                        <br />
+                        <input type="radio" name="PayMode" value="DC" id="disable">
+
+                        <label>Debit Card</label>
+                        <div>
+                            <button type="submit" class="btn btn-success btn-primary" >PAY</button>
                         </div>
-                    
-                
+                    </form>
+                </div>
 
                 <!-- CREDIT CARD FORM STARTS HERE -->
+
                 <div class="panel panel-default credit-card-box" id="divcard">
                     <div class="panel-heading display-table">
                         <div class="row display-tr">
@@ -193,17 +189,10 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <div class="form-group">
-                                        <label for="couponCode">COUPON CODE</label>
-                                        <input type="text" class="form-control" name="couponCode" />
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-xs-12">
-                                    <button class="subscribe btn btn-success btn-lg btn-block" type="button">Start Subscription</button>
+                                    <button class="subscribe btn btn-success btn-lg btn-block" type="button" onclick="@("window.location.href='" + @Url.Action("Success", "Order") + "'")">Pay</button>
                                 </div>
                             </div>
                             <div class="row" style="display:none;">
@@ -219,67 +208,84 @@
 
             </div>
 
-            <div class="col-xs-12 col-md-8" style="font-size: 12pt; line-height: 2em;">
+            <div class="col-xs-12 col-md-6" style="font-size: 12pt; line-height: 2em;">
                 <div class="container card-deck bg-dark mb-3" style="width:50rem;">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title"><strong>Order Details</strong></h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-condensed">
-                                                <thead>
-                                                    <tr>
-                                                        <td><strong>ITEM</strong></td>
-                                                        <td class="text-center"><strong>PRICE</strong></td>
-                                                        <td class="text-center"><strong>QUANTITY</strong></td>
-                                                        <td class="text-right"><strong>TOTAL</strong></td>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <!-- foreach ($order->lineItems as $line) or some such thing here -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><strong>Order Details</strong></h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-condensed">
+                                    <thead>
+                                        <tr>
+                                            <td><strong>ITEM</strong></td>
+                                            <td class="text-center"><strong>PRICE</strong></td>
+                                            <td class="text-center"><strong>QUANTITY</strong></td>
+                                            <td class="text-right"><strong>TOTAL</strong></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- foreach ($order->lineItems as $line) or some such thing here -->
 
 
-                                                    @foreach (var item in list)
-                                                    {
-                                                        <tr>
-                                                            <td>@item.Title</td>
-                                                            <td class="text-center">@item.Price</td>
-                                                            <td class="text-center">@item.Quantity</td>
-                                                            <td class="text-right">@item.sum</td>
-                                                        </tr>
-                                                    }
+                                        @foreach (var item in list)
+                                        {
+                                            <tr>
+                                                <td>@item.Title</td>
+                                                <td class="text-center">@item.Price</td>
+                                                <td class="text-center">@item.Quantity</td>
+                                                <td class="text-right">@string.Format("{0}", item.Quantity * item.Price)</td>
+                                            </tr>
+                                        }
 
-                                                    <tr>
-                                                        @{
+                                        <tr>
+                                            @{
 
-                                                            int total = 0;
-                                                            foreach (var item in list)
-                                                            {
-                                                                total = item.sum + total;
-                                                            }
-                                                            <td class="no-line"></td>
-                                                            <td class="no-line"></td>
-                                                            <td class="no-line text-center"><strong>Total</strong></td>
-                                                            <td class="no-line text-right">@total</td>
-                                                        }
+                                                int total = 0;
+                                                foreach (var item in list)
+                                                {
+                                                    total += (int)@item.Price * @item.Quantity;
+                                                }
+                                                <td class="no-line"></td>
+                                                <td class="no-line"></td>
+                                                <td class="no-line text-center"><strong>Total</strong></td>
+                                                <td class="no-line text-right">@total</td>
+                                            }
 
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 
 
-                        
-                   
+
+
                 </div>
             </div>
 
         </div>
     </div>
+    @*<form asp-action="Success" asp-controller="Order" method="post">
+        @for (var i = 0; i < list.Count; i++)
+        {
+            <div class="container">
+                <div class="row">
+                    <input type="hidden" name="[@i].BookId" value="@list[i].BookId" />
+                    <input type="hidden" name="[@i].Title" value="@list[i].Title" />
+                    <input type="hidden" name="[@i].Price" value="@list[i].Price" />
+                    <input type="hidden" name="[@i].Quantity" value="@list[i].Quantity" />
 
+                </div>
+            </div>
+
+        }
+        <div>
+            <button class="btn btn-success btn-primary" onclick="@("window.location.href='" + @Url.Action("Pay", "Order") + "'")">PAY</button>
+        </div>
+    </form>*@
 
     <script>
         $('#divcard').hide();
@@ -291,7 +297,7 @@
                 $('#divcard').hide();
         });
 
-        var x = 0;
+
     </script>
 </body>
 

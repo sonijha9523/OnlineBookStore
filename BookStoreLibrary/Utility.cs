@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace BookStoreApplication.Models
+namespace BookStoreLibrary
 {
     public class ProductViewModel
     {
@@ -36,6 +35,12 @@ namespace BookStoreApplication.Models
     }
     public class ProcessOrder : ProductViewModelCart
     {
+        public int date { get; set; }
         public int sum { get; set; }
+    }
+    public class ReorderLevelDetails
+    {
+        public int BookId { get; set; }
+        public int Quantity { get; set; }
     }
 }

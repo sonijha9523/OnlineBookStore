@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using BookStoreApplication.Models;
+using BookStoreLibrary;
 using BookStoreWebService.Models;
 using BookStoreWebService.Models.BookDB;
 using Microsoft.AspNetCore.Http;
@@ -84,6 +85,7 @@ namespace BookStoreApplication.Controllers
             BookAppservice.UpdateCart(id);
           return   RedirectToAction("ViewCart");
         }
+        [HttpGet]
         [HttpPost]
         [ErrorFilter]
         public IActionResult ProcessOrder(ProductViewModelCart[] p)
@@ -98,28 +100,30 @@ namespace BookStoreApplication.Controllers
                 log.LogCritical(e.Message);
                 log.LogInformation("Executed ProcessOrder Method..");
             }
-            List<ProcessOrder> productList = new List<ProcessOrder>();
-            foreach (var i in p)
-            {
-                ProcessOrder obj = new ProcessOrder();
-                obj.BookId = i.BookId;
-                obj.Price = i.Price;
-                obj.sum = (int)(i.Price * i.Quantity);
-                obj.Quantity = i.Quantity;
-                obj.Title = i.Title;
-                //if(productList.Find(obj))
-                productList.Add(obj);
+            /* List<ProcessOrder> productList = new List<ProcessOrder>();
+             foreach (var i in p)
+             {
+                 ProcessOrder obj = new ProcessOrder();
+                 obj.BookId = i.BookId;
+                 obj.Price = i.Price;
+                 obj.sum = (int)(i.Price * i.Quantity);
+                 obj.Quantity = i.Quantity;
+                 obj.Title = i.Title;
+                 //if(productList.Find(obj))
+                 productList.Add(obj);
 
+             }*/
+            BookAppservice.context = HttpContext;
+            BookAppservice.StoreFinalProductsInSession(p);
+             ViewData["products"] = p;
 
-            }
-            ViewData["products"] = productList;
             return View();
         }
 
         [HttpGet]
         [HttpPost]
         [ErrorFilter]
-        public IActionResult Payment(ProcessOrder[] p)
+        public IActionResult Payment()
         {
             try
             {
@@ -132,24 +136,29 @@ namespace BookStoreApplication.Controllers
                 log.LogInformation("Executed ProcessOrder Method..");
             }
             List<ProcessOrder> productList = new List<ProcessOrder>();
-            foreach (var i in p)
-            {
-                ProcessOrder obj = new ProcessOrder();
-                obj.BookId = i.BookId;
-                obj.Price = i.Price;
-                obj.sum = (int)(i.Price * i.Quantity);
-                obj.Quantity = i.Quantity;
-                obj.Title = i.Title;
-                productList.Add(obj);
+            BookAppservice.context = HttpContext;
+            ProductViewModelCart[] p = BookAppservice.GetFinalProductsFromSession();
+            //foreach (var i in p)
+            //{
+            //    ProcessOrder obj = new ProcessOrder();
+            //    obj.BookId = i.BookId;
+            //    obj.Price = i.Price;
+            //    obj.sum = (int)(i.Price * i.Quantity);
+            //    obj.Quantity = i.Quantity;
+            //    obj.Title = i.Title;
+            //    productList.Add(obj);
 
-            }
-            ViewData["products"] = productList;
+            //}
+            // BookAppservice.StoreFinalProductsInSession(p);
+             ViewData["products"] = p;
+            // TempData["SelectedProducts"] = p;
+            // return RedirectToAction("Pay", "Order");
             return View();
         }
         [HttpGet]
         [HttpPost]
         [ErrorFilter]
-        public IActionResult Pay(ProcessOrder[] p)
+        public IActionResult Pay()
         {
             try
             {
@@ -162,20 +171,54 @@ namespace BookStoreApplication.Controllers
                 log.LogInformation("Executed ProcessOrder Method..");
             }
             List<ProcessOrder> productList = new List<ProcessOrder>();
-            foreach (var i in p)
-            {
-                ProcessOrder obj = new ProcessOrder();
-                obj.BookId = i.BookId;
-                obj.Price = i.Price;
-                obj.sum = (int)(i.Price * i.Quantity);
-                obj.Quantity = i.Quantity;
-                obj.Title = i.Title;
-                productList.Add(obj);
+            BookAppservice.context = HttpContext;
+            ProductViewModelCart[] p = BookAppservice.GetFinalProductsFromSession();
+            //foreach (var i in p)
+            //{
+            //    ProcessOrder obj = new ProcessOrder();
+            //    obj.BookId = i.BookId;
+            //    obj.Price = i.Price;
+            //    obj.sum = (int)(i.Price * i.Quantity);
+            //    obj.Quantity = i.Quantity;
+            //    obj.Title = i.Title;
+            //    productList.Add(obj);
 
-            }
-            ViewData["products"] = productList;
+            //}
+            // BookAppservice.StoreFinalProductsInSession(p);
+            ViewData["products"] = p;
+            //TempData["SelectedProducts"] = p;
             return View();
         }
 
+        [HttpGet]
+        [HttpPost]
+        [ErrorFilter]
+        public IActionResult Success(string PayMode)
+        {
+            int InvoiceId;
+            try
+            {
+                log.LogInformation("Executing ProcessOrder Method..");
+                log.LogInformation("This is a Test Message");
+            }
+            catch (Exception e)
+            {
+                log.LogCritical(e.Message);
+                log.LogInformation("Executed ProcessOrder Method..");
+            }
+            List<ProcessOrder> productList = new List<ProcessOrder>();
+            BookAppservice.context = HttpContext;
+            ProductViewModelCart[] p = BookAppservice.GetFinalProductsFromSession();
+            InvoiceId = BookAppservice.SaveDetails(p,PayMode);
+            string Cid = HttpContext.Session.GetString("Customer");
+            int CustomerId = Convert.ToInt32(Cid);
+            List<Customer> c = BookAppservice.GetCustomer(CustomerId);
+            ViewData["Customer"] = c;
+            ViewData["products"] = p;
+            ViewData["Invoice"] = InvoiceId;
+            ViewData["PaymentMethod"] = PayMode;
+            //TempData["SelectedProducts"] = p;
+            return View();
+        }
     }
 }

@@ -225,5 +225,27 @@ namespace BookStoreApplication.Controllers
 
             return View();
         }
+        [ErrorFilter]
+        public IActionResult ReorderLevel()
+        {
+            try
+            {
+                log.LogInformation("Executing GetBooks method");
+                log.LogInformation("This is a Test Message");
+            }
+            catch (Exception e)
+            {
+                log.LogCritical(e.Message);
+                log.LogInformation("Executed GetBooks Method..");
+            }
+            List<Book> AllBookList = service.ReorderLevel();
+            ViewData["Books"] = AllBookList;
+            return View();
+        }
+        public IActionResult UpdateQuantity(ReorderLevelDetails[] r)
+        {
+            service.UpdateQuantity(r);
+            return RedirectToAction("ReorderLevel"); ;
+        }
     }
 }

@@ -11,5 +11,6 @@ namespace BookStoreWebService.Models.BookDB
         public decimal? OrderPrice { get; set; }
 
         public Book Book { get; set; }
+        public Orders Order { get; set; }
     }
 }

@@ -1,7 +1,8 @@
-﻿@model IEnumerable<BookStoreApplication.Models.ProcessOrder>
+﻿@using BookStoreLibrary;
+@*@model IEnumerable<BookStoreApplication.Models.ProcessOrder>*@
 @{
     ViewData["Title"] = "Payment";
-    var list = (List<ProcessOrder>)ViewData["products"];
+    var list = (ProductViewModelCart[])ViewData["products"];
 }
 @{
     Layout = null;
@@ -79,17 +80,16 @@
                                                 <td>@item.Title</td>
                                                 <td class="text-center">@item.Price</td>
                                                 <td class="text-center">@item.Quantity</td>
-                                                <td class="text-right">@item.sum</td>
+                                                <td class="text-right">@string.Format("{0}", item.Quantity * item.Price)</td>
                                             </tr>
                                         }
-
                                         <tr>
                                             @{
 
                                                 int total = 0;
                                                 foreach (var item in list)
                                                 {
-                                                    total = item.sum + total;
+                                                    total += item.Quantity * (int)item.Price;
                                                 }
                                                 <td class="no-line"></td>
                                                 <td class="no-line"></td>
@@ -107,6 +107,9 @@
             </div>
         </div>
     </div>
+    <div>
+        <button class="btn btn-success btn-primary" onclick="@("window.location.href='" + @Url.Action("Pay", "Order") + "'")">PAY</button>
+    </div>
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -114,7 +117,7 @@
 
 </html>
 
-<form asp-action="Pay" asp-controller="Order" method="post">
+@*<form asp-action="Pay" asp-controller="Order" method="post">
     @for (var i = 0; i < list.Count; i++)
     {
         <div class="container">
@@ -131,4 +134,4 @@
         <div>
             <button class="btn btn-success btn-primary" onclick="@("window.location.href='" + @Url.Action("Pay", "Order") + "'")">PAY</button>
         </div>
-</form>
+</form>*@
