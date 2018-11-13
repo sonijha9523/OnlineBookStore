@@ -12,8 +12,8 @@ namespace BookStoreWebServiceTests
     [TestClass]
     public class WebServiceTests
     {
-        public int customerId;
-        public int bookId;
+        public static int customerId;
+        public static int bookId;
         BookStoreDBContext context;
         AdminSeviceController controller;
         BookServiceController controller1;
@@ -133,7 +133,7 @@ namespace BookStoreWebServiceTests
         {
             Customer obj = new Customer()
             {
-                Email = "Jerry1234@gmail.com",
+                Email = "Jerry12345@gmail.com",
                 CustomerName = "Anuj",
                 Address = "aaaa",
                 Password = "Anuj@123",
@@ -186,7 +186,7 @@ namespace BookStoreWebServiceTests
         {
             Book obj = new Book
             {
-                BookTitle = "TestBook",
+                BookTitle = "TestBook1",
                 BookQuantity = 40,
                 Price = 600,
                 CategoryId = 404,
@@ -237,10 +237,9 @@ namespace BookStoreWebServiceTests
         public static void ClassClean()
         {
             BookStoreDBContext context = new BookStoreDBContext();
-            WebServiceTests w = new WebServiceTests();
             Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@");
-            var customer = context.Customer.SingleOrDefault(c => c.CustomerId == w.customerId);
-            var book = context.Book.SingleOrDefault(b => b.BookId == w.bookId);
+            var customer = context.Customer.SingleOrDefault(c => c.CustomerId == customerId);
+            var book = context.Book.SingleOrDefault(b => b.BookId == bookId);
             context.Customer.Remove(customer);
             context.Book.Remove(book);
             context.SaveChanges();

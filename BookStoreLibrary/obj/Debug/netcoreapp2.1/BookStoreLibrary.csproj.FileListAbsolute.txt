@@ -85,3 +85,4 @@ D:\OnlineBookStore\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.Ass
 D:\OnlineBookStore\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.AssemblyInfo.cs
 D:\OnlineBookStore\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.dll
 D:\OnlineBookStore\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.pdb
+D:\OnlineBookStore\BookStoreLibrary\obj\Debug\netcoreapp2.1\BookStoreLibrary.csprojAssemblyReference.cache
