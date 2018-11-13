@@ -187,7 +187,7 @@ namespace BookStoreWebServiceTests
             ProductOrderDetails obj = new ProductOrderDetails()
             {
 
-            }
+            };
         }
         [TestMethod]
         public void AlreadyExistingUserIdTestMethod()
