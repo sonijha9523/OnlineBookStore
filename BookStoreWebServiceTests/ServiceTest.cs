@@ -133,7 +133,7 @@ namespace BookStoreWebServiceTests
         {
             Customer obj = new Customer()
             {
-                Email = "Jerry123@gmail.com",
+                Email = "Jerry1234@gmail.com",
                 CustomerName = "Anuj",
                 Address = "aaaa",
                 Password = "Anuj@123",
@@ -186,7 +186,7 @@ namespace BookStoreWebServiceTests
         {
             Book obj = new Book
             {
-                BookTitle = "Book2",
+                BookTitle = "TestBook",
                 BookQuantity = 40,
                 Price = 600,
                 CategoryId = 404,
