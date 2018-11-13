@@ -158,6 +158,38 @@ namespace BookStoreWebServiceTests
             Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
         }
         [TestMethod]
+        public void Orders()
+        {
+            Orders obj = new Orders()
+            {
+
+            };
+        }
+        [TestMethod]
+        public void OrderDetails()
+        {
+            OrderDetails obj = new OrderDetails()
+            {
+
+            };
+        }
+        [TestMethod]
+        public void ProductOrders()
+        {
+            ProductOrder obj = new ProductOrder()
+            {
+
+            };
+        }
+        [TestMethod]
+        public void ProductOrderDetails()
+        {
+            ProductOrderDetails obj = new ProductOrderDetails()
+            {
+
+            }
+        }
+        [TestMethod]
         public void AlreadyExistingUserIdTestMethod()
         {
             Customer obj = new Customer()
