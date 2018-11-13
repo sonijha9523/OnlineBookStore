@@ -127,17 +127,17 @@
             </div>
             <div class="col-md-8">
                 <div class="row text-center text-lg-left">
-                        @foreach (var obj in Model)
-                        {
+                    @foreach (var obj in Model)
+                    {
 
-                            <div class="card card-body text-center border-secondary" style="align-items:center;width: 10rem;margin:10px; padding: 1px 1px 1px 1px;display: table;clear: both;">
-                                <img class="card-img-top" src="@obj.Image" alt="Card image cap" style="margin:10px ;width: 100px;height: 150px;">
-                                <h6>@obj.BookTitle</h6>
-                                <h6>@obj.Price</h6>
-                            </div>
+                        <div class="card card-body text-center border-secondary" style="align-items:center;width: 10rem;margin:10px; padding: 1px 1px 1px 1px;display: table;clear: both;">
+                            <img class="card-img-top" src="@obj.Image" alt="Card image cap" style="margin:10px ;width: 100px;height: 150px;">
+                            <h6>@obj.BookTitle</h6>
+                            <h6>@obj.Price</h6>
+                        </div>
 
 
-                        }                   
+                    }
                 </div>
 
             </div>

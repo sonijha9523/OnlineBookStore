@@ -149,31 +149,8 @@ namespace BookStoreApplication.Controllers
         [HttpGet]
         [HttpPost]
         [ErrorFilter]
-        public IActionResult Pay(ProcessOrder[] p)
+        public IActionResult Pay()
         {
-            try
-            {
-                log.LogInformation("Executing ProcessOrder Method..");
-                log.LogInformation("This is a Test Message");
-            }
-            catch (Exception e)
-            {
-                log.LogCritical(e.Message);
-                log.LogInformation("Executed ProcessOrder Method..");
-            }
-            List<ProcessOrder> productList = new List<ProcessOrder>();
-            foreach (var i in p)
-            {
-                ProcessOrder obj = new ProcessOrder();
-                obj.BookId = i.BookId;
-                obj.Price = i.Price;
-                obj.sum = (int)(i.Price * i.Quantity);
-                obj.Quantity = i.Quantity;
-                obj.Title = i.Title;
-                productList.Add(obj);
-
-            }
-            ViewData["products"] = productList;
             return View();
         }
 
