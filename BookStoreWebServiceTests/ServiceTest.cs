@@ -5,20 +5,28 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BookStoreWebServiceTests
 {
     [TestClass]
     public class WebServiceTests
     {
+        public static int customerId;
+        public static int bookId;
+        public static int orderId;
+        public static int OrderDetailId;
+        public static int InvoiceNo;
         BookStoreDBContext context;
         AdminSeviceController controller;
         BookServiceController controller1;
+        OrderServiceController controller2;
         public WebServiceTests()
         {
             context = new BookStoreDBContext();
             controller = new AdminSeviceController();
             controller1 = new BookServiceController();
+            controller2 = new OrderServiceController();
         }
         [TestMethod]
         public void TestMethodGetSubCategory()
@@ -130,38 +138,74 @@ namespace BookStoreWebServiceTests
         {
             Customer obj = new Customer()
             {
-                Email = "ABCD1@gmail.com",
-                CustomerName = "ABCD",
-                Address = "ABCD1",
-                Password = "Abcd@1234",
-                MobileNumber = "0000000000",
+                Email = "Jerry12345@gmail.com",
+                CustomerName = "Anuj",
+                Address = "aaaa",
+                Password = "Anuj@123",
+                MobileNumber = "1111111111",
             };
             var result = controller.AddNew(obj);
+            customerId = obj.CustomerId;
             Assert.IsInstanceOfType(result, typeof(OkObjectResult));
         }
         [TestMethod]
         public void NotSuccessAcountCreationTestMethod()
         {
-            //Customer obj = new Customer()
-            //{
-            //    Email = "ABCD1@gmail.com",
-            //    CustomerName = "ABCD",
-            //    Address = "ABCD1",
-            //    Password = "Abcd@1234",
-            //    MobileNumber = "0000000000",
-            //};
-            //var result = controller.AddNew(obj);
-            //Assert.IsInstanceOfType(result, typeof(NotFoundResult));
+            Customer obj = new Customer()
+            {
+                Email = "Gitanjali3@gmail.com",
+                CustomerName = "Gitanjali",
+                Address = "kkkkk",
+                Password = "Sakshi@123",
+                MobileNumber = "2222222222",
+            };
+            var result = controller.AddNew(obj);
+            Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
         }
         [TestMethod]
-        public void PasswordFieldsUnmatchTestMethod()
+        public void Orders()
         {
-
+            FinalOrder obj = new FinalOrder()
+            {
+                PaymentMethod = "COD",
+                products = new ProductViewModelCart[]
+                {
+                    new ProductViewModelCart(){
+                         BookId =201,
+                         Price = 400,
+                         Quantity = 8,
+                         Title = "bOOKtEST1",
+                    }
+                },
+                CustomerId = 111
+            };
+            var result = controller2.AddOrder(obj);
+            o
+            Assert.IsInstanceOfType(result, typeof(OkObjectResult));
+        }
+        [TestMethod]
+        public void ProductOrders()
+        {
+            ReorderLevelDetails[] obj = new ReorderLevelDetails[]
+            {
+               new ReorderLevelDetails() { BookId=12, Quantity=10}
+            };
+            var result = controller.UpdateQuantity(obj);
+            Assert.IsInstanceOfType(result, typeof(OkObjectResult));
         }
         [TestMethod]
         public void AlreadyExistingUserIdTestMethod()
         {
-
+            Customer obj = new Customer()
+            {
+                Email = "Gitanjali3@gmail.com",
+                CustomerName = "Gitanjali",
+                Address = "kkkkk",
+                Password = "Sakshi@123",
+                MobileNumber = "2222222222",
+            };
+            var result = controller.AddNew(obj);
+            Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
         }
         [TestMethod]
         public void AddToCartTestMethod()
@@ -176,14 +220,9 @@ namespace BookStoreWebServiceTests
         [TestMethod]
         public void AddBookRecordTestMethod()
         {
-
-        }
-        [TestMethod]
-        public void RemoveBookRecordTestMethod()
-        {
             Book obj = new Book
             {
-                BookTitle = "Book2",
+                BookTitle = "TestBook1",
                 BookQuantity = 40,
                 Price = 600,
                 CategoryId = 404,
@@ -191,8 +230,25 @@ namespace BookStoreWebServiceTests
                 SupplierId = 1000
             };
             var result = controller.AddNewBook(obj);
+            bookId = obj.BookId;
             Assert.IsInstanceOfType(result, typeof(OkObjectResult));
+
         }
+        //[TestMethod]
+        //public void RemoveBookRecordTestMethod()
+        //{
+        //    Book obj = new Book
+        //    {
+        //        BookTitle = "Book2",
+        //        BookQuantity = 40,
+        //        Price = 600,
+        //        CategoryId = 404,
+        //        SubCategoryId = 504,
+        //        SupplierId = 1000
+        //    };
+        //    var result = controller.AddNewBook(obj);
+        //    Assert.IsInstanceOfType(result, typeof(OkObjectResult));
+        //}
         [TestMethod]
         public void SearchingBookTestMethod()
         {
@@ -203,7 +259,25 @@ namespace BookStoreWebServiceTests
             };
             var result = controller1.SearchBooks(obj);
             Assert.IsInstanceOfType(result, typeof(OkObjectResult));
-            // Assert.IsNotNull(result);
+        }
+        //[TestCleanup]
+        //public void AccountCreationCleanUp()
+        //{
+           
+        //    var customer = context.Customer.SingleOrDefault(c => c.CustomerId == customerId);
+        //    context.Customer.Remove(customer);
+        //    context.SaveChanges();
+        //}
+        [ClassCleanup]
+        public static void ClassClean()
+        {
+            BookStoreDBContext context = new BookStoreDBContext();
+            Console.WriteLine("@@@@@@@@@@@@@@@@@@@@@");
+            var customer = context.Customer.SingleOrDefault(c => c.CustomerId == customerId);
+            var book = context.Book.SingleOrDefault(b => b.BookId == bookId);
+            context.Customer.Remove(customer);
+            context.Book.Remove(book);
+            context.SaveChanges();
         }
     }
 }

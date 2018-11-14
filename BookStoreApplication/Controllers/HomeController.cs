@@ -12,18 +12,18 @@ using WebApplication2.Models;
 namespace BookStoreApplication.Controllers
 {
 
-    public class AdminController : Controller
+    public class HomeController : Controller
     {
-        ILogger<AdminController> log;
-        HomeService service;
+        ILogger<HomeController> log;
+        HomeManagerService service;
         BookService service1;
         BookManagerService serviceBook;
            
-        public AdminController(ILogger<AdminController> log)
+        public HomeController(ILogger<HomeController> log)
         {
             service1 = new BookService();
             serviceBook = new BookManagerService();
-            service = new HomeService();
+            service = new HomeManagerService();
             this.log = log;
             //service = new HomeService(this.context);
         }
@@ -147,7 +147,7 @@ namespace BookStoreApplication.Controllers
               var key = "my-key";
               var str = JsonConvert.SerializeObject(obj*/
             //   context.Session.SetString(key, str);
-            return RedirectToAction("Admin", "Admin", new { area = "" });
+            return RedirectToAction("Admin", "Home", new { area = "" });
 
         }
         public IActionResult AddBook()
@@ -224,6 +224,28 @@ namespace BookStoreApplication.Controllers
         {
 
             return View();
+        }
+        [ErrorFilter]
+        public IActionResult ReorderLevel()
+        {
+            try
+            {
+                log.LogInformation("Executing GetBooks method");
+                log.LogInformation("This is a Test Message");
+            }
+            catch (Exception e)
+            {
+                log.LogCritical(e.Message);
+                log.LogInformation("Executed GetBooks Method..");
+            }
+            List<Book> AllBookList = service.ReorderLevel();
+            ViewData["Books"] = AllBookList;
+            return View();
+        }
+        public IActionResult UpdateQuantity(ReorderLevelDetails[] r)
+        {
+            service.UpdateQuantity(r);
+            return RedirectToAction("ReorderLevel"); ;
         }
     }
 }

@@ -21,15 +21,16 @@ namespace BookStoreWebService.Models.BookDB
         public virtual DbSet<OrderDetails> OrderDetails { get; set; }
         public virtual DbSet<Orders> Orders { get; set; }
         public virtual DbSet<Payment> Payment { get; set; }
-        public virtual DbSet<ReorderTransaction> ReorderTransaction { get; set; }
+        public virtual DbSet<ProductOrder> ProductOrder { get; set; }
+        public virtual DbSet<ProductOrderDetails> ProductOrderDetails { get; set; }
         public virtual DbSet<SubCategory> SubCategory { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("server=trd-509;database=BookStoreDB;trusted_connection=yes");
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+                optionsBuilder.UseSqlServer("server=localhost;database=BookStoreDB;trusted_connection=yes");
             }
         }
 
@@ -38,11 +39,11 @@ namespace BookStoreWebService.Models.BookDB
             modelBuilder.Entity<Book>(entity =>
             {
                 entity.Property(e => e.BookTitle)
-                    .HasMaxLength(20)
+                    .HasMaxLength(100)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Image)
-                    .HasMaxLength(50)
+                    .HasMaxLength(1000)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Price).HasColumnType("money");
@@ -93,7 +94,13 @@ namespace BookStoreWebService.Models.BookDB
                     .WithMany(p => p.OrderDetails)
                     .HasForeignKey(d => d.BookId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("OrderDetails2FK");
+                    .HasConstraintName("FK_OrderDetails_Book");
+
+                entity.HasOne(d => d.Order)
+                    .WithMany(p => p.OrderDetails)
+                    .HasForeignKey(d => d.OrderId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("Fk_OrderDetails");
             });
 
             modelBuilder.Entity<Orders>(entity =>
@@ -126,23 +133,30 @@ namespace BookStoreWebService.Models.BookDB
                     .HasConstraintName("FK_Payment_Orders");
             });
 
-            modelBuilder.Entity<ReorderTransaction>(entity =>
+            modelBuilder.Entity<ProductOrder>(entity =>
             {
-                entity.HasKey(e => new { e.RequestId, e.BookId });
-
-                entity.ToTable("Reorder Transaction");
-
-                entity.Property(e => e.RequestId).ValueGeneratedOnAdd();
+                entity.HasKey(e => e.RequestId);
 
                 entity.Property(e => e.ProductOrderAmount).HasColumnType("money");
 
-                entity.Property(e => e.ProductOrderDate).HasColumnType("date");
+                entity.Property(e => e.ProductOrderDate).HasColumnType("datetime");
+            });
+
+            modelBuilder.Entity<ProductOrderDetails>(entity =>
+            {
+                entity.HasKey(e => new { e.RequestId, e.BookId });
 
                 entity.HasOne(d => d.Book)
-                    .WithMany(p => p.ReorderTransaction)
+                    .WithMany(p => p.ProductOrderDetails)
                     .HasForeignKey(d => d.BookId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Invoice_Book");
+                    .HasConstraintName("Fk_Book1");
+
+                entity.HasOne(d => d.Request)
+                    .WithMany(p => p.ProductOrderDetails)
+                    .HasForeignKey(d => d.RequestId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("Fk_ProductDetails1");
             });
 
             modelBuilder.Entity<SubCategory>(entity =>

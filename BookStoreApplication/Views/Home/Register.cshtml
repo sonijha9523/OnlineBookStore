@@ -116,7 +116,7 @@
                     <h2>Sign Up</h2>
                     <p>Please enter your details</p>
                 </div>
-                <form asp-action="Register" asp-controller="Admin" method="post" role="form">
+                <form asp-action="Register" asp-controller="Home" method="post" role="form">
                     <div class="form-group row">
                         <label asp-for="CustomerName" class="col-md-4 col-form-label text-md-right">Full Name</label>
                         <div class="col-md-6">
@@ -148,23 +148,37 @@
                     <div class="form-group row">
                         <label asp-for="Password" class="col-md-4 col-form-label text-md-right">Password</label>
                         <div class="col-md-6">
-                            <input asp-for="Password" type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="30" class="form-control" id="cust-name" placeholder=" Enter Password" required>
+                            <input id="pwd" asp-for="Password" type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="30" class="form-control" id="cust-name" placeholder=" Enter Password" required>
                             <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label for="pwd" class="col-md-4 col-form-label text-md-right"> Re-enterPassword:</label>
                         <div class="col-md-6">
-                            <input asp-for="Password" type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="30" class="form-control" id="cust-name" placeholder=" Re-Enter Password" required>
+                            <input id="pwdconfirm" asp-for="Password" type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="30" class="form-control" id="cust-name" placeholder=" Re-Enter Password" required>
                             <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button id="btnSubmit" type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
     </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
 
+    $('#btnSubmit').click(function(e){
+    
+    var pwd=$('#pwd').val();
+    var pwdconfirm=$('#pwdconfirm').val();
+
+        if (pwd != pwdconfirm) {
+            alert('not matched');
+            e.preventDefault();
+        }
+    
+    });
+</script>
 
 </body>
 </html>

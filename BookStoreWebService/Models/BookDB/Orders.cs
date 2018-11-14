@@ -7,6 +7,7 @@ namespace BookStoreWebService.Models.BookDB
     {
         public Orders()
         {
+            OrderDetails = new HashSet<OrderDetails>();
             Payment = new HashSet<Payment>();
         }
 
@@ -17,6 +18,7 @@ namespace BookStoreWebService.Models.BookDB
         public int CustomerId { get; set; }
 
         public Customer Customer { get; set; }
+        public ICollection<OrderDetails> OrderDetails { get; set; }
         public ICollection<Payment> Payment { get; set; }
     }
 }

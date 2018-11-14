@@ -2,7 +2,7 @@
 @model IList<BookStoreWebService.Models.BookDB.Book>
 
 @{
-    ViewData["Title"] = "HomePage";
+    //ViewData["Title"] = "HomePage";
     ViewData["Title"] = "Index";
     var book = ViewBag.AllBooks;
 }
@@ -27,22 +27,22 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link active" onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'")">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'")"> <i class="fa fa-fw fa-home"></i>Home <span class="sr-only glyphicon glyphicon-user">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("Contact", "Admin") + "'")">Contact <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("Contact", "Home") + "'")"><i class="fa fa-phone"></i>Contact <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("About", "Admin") + "'")">About <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("About", "Home") + "'")"><i class="fa fa-book"></i>About <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("Register", "Admin") + "'")">SignUp <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("Register", "Home") + "'")"><i class="fa fa-fw fa-user"></i>SignUp <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("Login", "Admin") + "'")"> Login <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("Login", "Home") + "'")"><i class="fa fa-user-circle-o"></i> Login <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("LoginAdmin", "Admin") + "'")">AdminLogin <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("LoginAdmin", "Home") + "'")"><i class="fa fa-user-circle-o"></i>AdminLogin <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <div class="search-container">
@@ -127,17 +127,17 @@
             </div>
             <div class="col-md-8">
                 <div class="row text-center text-lg-left">
-                    @foreach (var obj in Model)
-                    {
+                        @foreach (var obj in Model)
+                        {
 
-                        <div class="card card-body text-center border-secondary" style="align-items:center;width: 10rem;margin:10px; padding: 1px 1px 1px 1px;display: table;clear: both;">
-                            <img class="card-img-top" src="@obj.Image" alt="Card image cap" style="margin:10px ;width: 100px;height: 150px;">
-                            <h6>@obj.BookTitle</h6>
-                            <h6>@obj.Price</h6>
-                        </div>
+                            <div class="card card-body text-center border-secondary" style="align-items:center;width: 10rem;margin:10px; padding: 1px 1px 1px 1px;display: table;clear: both;">
+                                <img class="card-img-top" src="@obj.Image" alt="Card image cap" style="margin:10px ;width: 100px;height: 150px;">
+                                <h6>@obj.BookTitle</h6>
+                                <h6>@obj.Price</h6>
+                            </div>
 
 
-                    }
+                        }                   
                 </div>
 
             </div>

@@ -1,10 +1,12 @@
-﻿using BookStoreWebService.Models.BookDB;
+﻿using BookStoreLibrary;
+using BookStoreWebService.Models.BookDB;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace BookStoreApplication.Models
@@ -32,6 +34,7 @@ namespace BookStoreApplication.Models
             else
                 return null;
         }
+     
         public List<Book> GetAllBooks()
         {
 
@@ -45,85 +48,6 @@ namespace BookStoreApplication.Models
             }
             else
                 return null; ;
-        }
-        public void AddToCart(ProductViewModel model)
-        {
-            List<ProductViewModel> serializedObjects;
-            string json = "";
-            byte[] ary;
-           
-            // json = context.Session.GetString("CatSubCat");
-            // SubCategory subcategory = JsonConvert.DeserializeObject<SubCategory>(json);
-            bool isavailable = context.Session.TryGetValue("Cart", out ary);
-            if (isavailable == false)
-            {
-                serializedObjects = new List<ProductViewModel>();
-                serializedObjects.Add(model);
-                serializedObjects=serializedObjects.Distinct().ToList();
-                json = JsonConvert.SerializeObject(serializedObjects);
-                context.Session.SetString("Cart", json);
-            }
-            else
-            {
-                json = context.Session.GetString("Cart");
-                serializedObjects = JsonConvert.DeserializeObject<List<ProductViewModel>>(json);
-                serializedObjects.Add(model);
-                serializedObjects = serializedObjects.Distinct().ToList();
-                json = JsonConvert.SerializeObject(serializedObjects);
-                context.Session.SetString("Cart", json);
-            }
-
-        }
-        public List<ProductViewModelCart> ProductCart()
-
-        {
-
-            // List<ProductViewModelCart> serializedObjects;
-            string json = "";
-            byte[] ary;
-            bool isavailable = context.Session.TryGetValue("Cart", out ary);
-            json = context.Session.GetString("Cart");
-            //serializedObjects = JsonConvert.DeserializeObject<List<ProductViewModelCart>>(json);
-            List<ProductViewModelCart> list = JsonConvert.DeserializeObject<List<ProductViewModelCart>>(json);
-
-            List<ProductViewModelCart> result = (from c in list
-                                                 select new ProductViewModelCart()
-                                                 {
-                                                     CategoryId = c.CategoryId,
-                                                     Price = c.Price,
-                                                    BookId = c.BookId,
-                                                     Quantity = c.Quantity,
-                                                     SubCategoryId = c.SubCategoryId,
-                                                     Title = c.Title
-                                                 }).ToList();
-
-            return result.Distinct().ToList();
-        }
-       public void  UpdateCart(int id)
-        {
-            string json = "";
-            byte[] ary;
-            bool isavailable = context.Session.TryGetValue("Cart", out ary);
-            json = context.Session.GetString("Cart");
-            //serializedObjects = JsonConvert.DeserializeObject<List<ProductViewModelCart>>(json);
-            List<ProductViewModelCart> list = JsonConvert.DeserializeObject<List<ProductViewModelCart>>(json);
-
-            List<ProductViewModelCart> result = (from c in list
-                                                 select new ProductViewModelCart()
-                                                 {
-                                                     CategoryId = c.CategoryId,
-                                                     Price = c.Price,
-                                                     BookId = c.BookId,
-                                                     Quantity = c.Quantity,
-                                                     SubCategoryId = c.SubCategoryId,
-                                                     Title = c.Title
-                                                 }).ToList();
-            var item = result.SingleOrDefault(x => x.BookId== id);
-            if (item != null)
-               result.Remove(item);
-            string updatedList = JsonConvert.SerializeObject(result);
-            context.Session.SetString("Cart", updatedList);
-
         }
         public List<Book> GetBookById(int id)
         {
@@ -153,8 +77,6 @@ namespace BookStoreApplication.Models
                 return null; ;
 
         }
-
-
     }
 
 

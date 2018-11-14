@@ -8,7 +8,7 @@ namespace BookStoreWebService.Models.BookDB
         public Book()
         {
             OrderDetails = new HashSet<OrderDetails>();
-            ReorderTransaction = new HashSet<ReorderTransaction>();
+            ProductOrderDetails = new HashSet<ProductOrderDetails>();
         }
 
         public int BookId { get; set; }
@@ -22,6 +22,6 @@ namespace BookStoreWebService.Models.BookDB
 
         public Category Category { get; set; }
         public ICollection<OrderDetails> OrderDetails { get; set; }
-        public ICollection<ReorderTransaction> ReorderTransaction { get; set; }
+        public ICollection<ProductOrderDetails> ProductOrderDetails { get; set; }
     }
 }
