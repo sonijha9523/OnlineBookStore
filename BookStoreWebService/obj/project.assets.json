@@ -12241,11 +12241,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineBookStore\\BookStoreWebService\\BookStoreWebService.csproj",
+      "projectUniqueName": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreWebService\\BookStoreWebService.csproj",
       "projectName": "BookStoreWebService",
-      "projectPath": "D:\\OnlineBookStore\\BookStoreWebService\\BookStoreWebService.csproj",
+      "projectPath": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreWebService\\BookStoreWebService.csproj",
       "packagesPath": "C:\\Users\\Training\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineBookStore\\BookStoreWebService\\obj\\",
+      "outputPath": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreWebService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12264,8 +12264,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\OnlineBookStore\\BookStoreLibrary\\BookStoreLibrary.csproj": {
-              "projectPath": "D:\\OnlineBookStore\\BookStoreLibrary\\BookStoreLibrary.csproj"
+            "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreLibrary\\BookStoreLibrary.csproj": {
+              "projectPath": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreLibrary\\BookStoreLibrary.csproj"
             }
           }
         }
