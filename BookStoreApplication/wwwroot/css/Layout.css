@@ -51,3 +51,6 @@ h1{
     transition: .3s;
     border-color: #b5d676;
 }
+.btn-search{
+    width:100%;
+}
