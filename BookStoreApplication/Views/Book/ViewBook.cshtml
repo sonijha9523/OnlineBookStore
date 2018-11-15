@@ -4,14 +4,6 @@
 
 <!DOCTYPE html>
 
-<html>
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-    <meta name="viewport" content="width=device-width" />
-    <title>ViewBook</title>
-</head>
-<body>
     <div class="container-fluid card" style="width:40rem;">
         @foreach (var item in Model)
         {
@@ -24,7 +16,7 @@
                 </div>
                 <div class="col-sm-8">
                     <br /><br /><br />
-                    <table class="table table-striped">
+                    <table class="table table-striped" style="color:whitesmoke">
                         <tr>
                             <th>
                                 @Html.DisplayNameFor(model => model.Price)
@@ -69,5 +61,3 @@
             
         </div>
     </div>
-</body>
-</html>
