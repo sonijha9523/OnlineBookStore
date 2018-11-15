@@ -484,3 +484,4 @@ D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\ReorderLevel.g.cshtml.cs
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\SaveChanges.g.cshtml.cs
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Views.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\New.g.cshtml.cs

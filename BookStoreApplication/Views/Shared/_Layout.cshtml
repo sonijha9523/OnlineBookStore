@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - BookStoreApplication</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
         <link rel="stylesheet" href="~/css/site.css" />
@@ -19,7 +22,7 @@
     </environment>
     <style>
         body#LoginForm {
-            background-image: url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg");
+            background-color:black;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -113,65 +116,31 @@
             }
     </style>
 </head>
-<body id="LoginForm">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @*<a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">BookStoreApplication</a>*@
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
-                </ul>
+<body>
+   
+    <header>
+        <div class="w3-top">
+            <div class="w3-bar w3-black w3-card">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+                <a onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'")" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+                <a onclick="@("window.location.href='" + @Url.Action("Login", "Home") + "'")" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGIN</a>
+                <a onclick="@("window.location.href='" + @Url.Action("Register", "Home") + "'")" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEW USER</a>
+
+
+                <a onclick="@("window.location.href='" + @Url.Action("Contact", "Home") + "'")" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+                <a onclick="@("window.location.href='" + @Url.Action("About", "Home") + "'")" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+                <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
             </div>
         </div>
-    </nav>
-    <header >
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" style="color:white">BOOK STORE</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link active" onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'")"> <i class="fa fa-fw fa-home"></i>Home <span class="sr-only glyphicon glyphicon-user">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("AllBook", "Book") + "'")">Books<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("GetCategory", "Book") + "'")">Categories <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("Contact", "Home") + "'")"><i class="fa fa-phone"></i>Contact <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" onclick="@("window.location.href='" + @Url.Action("About", "Home") + "'")"><i class="fa fa-book"></i>About <span class="sr-only">(current)</span></a>
-                    </li>
-
-                </ul>
-                <div class="search-container">
-                    <form action="/action_page.php">
-                        <input type="text" placeholder="Search.." name="search">
-                        <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'")">LogOut</button>
-
-            </div>
-        </nav>
-        <br />
+        <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+            <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+            <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+        </div>
+        <br /><br/><br />
     </header>
 
     <partial name="_CookieConsentPartial" />

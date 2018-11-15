@@ -171,16 +171,16 @@ namespace BookStoreWebServiceTests
                 products = new ProductViewModelCart[]
                 {
                     new ProductViewModelCart(){
-                         BookId =201,
+                         BookId =204,
                          Price = 400,
                          Quantity = 8,
-                         Title = "bOOKtEST1",
+                         Title = "Final Test",
                     }
                 },
                 CustomerId = 111
             };
-            var result = controller2.AddOrder(obj);
-            o
+            var result = controller2.AddOrder(obj) as OkObjectResult;
+            InvoiceNo = (int)result.Value;
             Assert.IsInstanceOfType(result, typeof(OkObjectResult));
         }
         [TestMethod]
@@ -188,7 +188,7 @@ namespace BookStoreWebServiceTests
         {
             ReorderLevelDetails[] obj = new ReorderLevelDetails[]
             {
-               new ReorderLevelDetails() { BookId=12, Quantity=10}
+               new ReorderLevelDetails() { BookId=201, Quantity=10}
             };
             var result = controller.UpdateQuantity(obj);
             Assert.IsInstanceOfType(result, typeof(OkObjectResult));
@@ -277,6 +277,16 @@ namespace BookStoreWebServiceTests
             var book = context.Book.SingleOrDefault(b => b.BookId == bookId);
             context.Customer.Remove(customer);
             context.Book.Remove(book);
+            
+
+            //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            Payment p= context.Payment.SingleOrDefault(c => c.InvoiceNumber == InvoiceNo);
+            var orderdetails=context.OrderDetails.Where(c => c.OrderId == p.OrderId).ToArray();
+
+            context.OrderDetails.RemoveRange(orderdetails);
+            context.Payment.Remove(p);
+            Orders order = context.Orders.SingleOrDefault(c => c.OrderId == p.OrderId);
+            context.Orders.Remove(order);
             context.SaveChanges();
         }
     }
