@@ -276,5 +276,17 @@ namespace BookStoreApplication.Controllers
                 return View(AllBookList);
             }
         }
+        public IActionResult Logout()
+        {
+            service.context = HttpContext;
+            bool SessionStatus = service.CheckSession();
+            if (SessionStatus)
+            {
+                HttpContext.Session.Clear();
+
+            }
+
+            return View("Login");
+        }
     }
 }
