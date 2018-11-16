@@ -462,10 +462,8 @@ D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplica
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.csproj.CopyComplete
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.dll
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\BookStoreApplication.pdb
-D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\AddBook.g.cshtml.cs
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Admin.g.cshtml.cs
-D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\GetBooks.g.cshtml.cs
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Login.g.cshtml.cs
@@ -490,4 +488,4 @@ C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookS
 C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Home\Views.g.cshtml.cs
 C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Order\Success.g.cshtml.cs
 D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LogoutLayout.g.cshtml.cs
-C:\Users\Training\Desktop\Finaltill10thOctobe - Copy\OnlineBookStoreSystem\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Shared\LogoutLayout.g.cshtml.cs
+D:\OnlineBookStore\BookStoreApplication\obj\Debug\netcoreapp2.1\Razor\Views\Book\AllBookById.g.cshtml.cs

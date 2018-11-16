@@ -144,6 +144,22 @@ namespace BookStoreApplication.Controllers
             List<Book> AllBookList = serviceBook.GetAllBooks();
             return View(AllBookList);
         }
+        [ErrorFilter]
+        public IActionResult AllBookById(int cid)
+        {
+            try
+            {
+                log.LogInformation("Executing GetBooks method");
+                log.LogInformation("This is a Test Message");
+            }
+            catch (Exception e)
+            {
+                log.LogCritical(e.Message);
+                log.LogInformation("Executed GetBooks Method..");
+            }
+            List<Book> AllBookList = serviceBook.GetAllBookById(cid);
+            return View(AllBookList);
+        }
 
     }
 }
