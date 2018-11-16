@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreLibrary\\BookStoreLibrary.csproj",
+      "projectUniqueName": "D:\\OnlineBookStore\\BookStoreLibrary\\BookStoreLibrary.csproj",
       "projectName": "BookStoreLibrary",
-      "projectPath": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreLibrary\\BookStoreLibrary.csproj",
+      "projectPath": "D:\\OnlineBookStore\\BookStoreLibrary\\BookStoreLibrary.csproj",
       "packagesPath": "C:\\Users\\Training\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreLibrary\\obj\\",
+      "outputPath": "D:\\OnlineBookStore\\BookStoreLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
