@@ -49,7 +49,6 @@ namespace BookStoreApplication.Models
             else
                 return null; ;
         }
-   
         public List<Book> GetBookById(int id)
         {
             HttpResponseMessage message = client.PostAsync("BookService/GetBookById/?id=" + id, null).Result;
