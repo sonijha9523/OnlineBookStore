@@ -220,5 +220,25 @@ namespace BookStoreApplication.Controllers
             //TempData["SelectedProducts"] = p;
             return View();
         }
+        [HttpGet]
+        [ErrorFilter]
+        public IActionResult UserProfile()
+        {
+            try
+            {
+                log.LogInformation("Executing ProcessOrder Method..");
+                log.LogInformation("This is a Test Message");
+            }
+            catch (Exception e)
+            {
+                log.LogCritical(e.Message);
+                log.LogInformation("Executed ProcessOrder Method..");
+            }
+            string Cid = HttpContext.Session.GetString("Customer");
+            int CustomerId = Convert.ToInt32(Cid);
+            List<Customer> c = BookAppservice.GetCustomer(CustomerId);
+            ViewData["Customer"] = c;
+            return View();
+        }
     }
 }

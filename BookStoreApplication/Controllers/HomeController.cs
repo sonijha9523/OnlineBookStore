@@ -247,6 +247,17 @@ namespace BookStoreApplication.Controllers
             service.UpdateQuantity(r);
             return RedirectToAction("ReorderLevel"); ;
         }
-        
+        public IActionResult Logout()
+        {
+            service.context = HttpContext;
+            bool SessionStatus = service.CheckSession();
+            if (SessionStatus)
+            {
+                HttpContext.Session.Clear();
+
+            }
+
+            return View("Login");
+        }
     }
 }
