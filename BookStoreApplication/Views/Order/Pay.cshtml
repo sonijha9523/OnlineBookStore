@@ -13,8 +13,8 @@
 <head>
     <style>
         /* Padding - just for asthetics on Bootsnipp.com */
-        body {
-            margin-top: 20px;
+        .body1 {
+            margin-top: 40px;
         }
 
         /* CSS for Credit Card Payment form */
@@ -40,7 +40,6 @@
             padding: 2px 8px;
             margin-top: 2px;
         }
-
         .credit-card-box .payment-errors {
             font-weight: bold;
             color: red;
@@ -65,7 +64,6 @@
             vertical-align: middle;
             width: 50%;
         }
-        /* Just looks nicer */
         .credit-card-box .panel-heading img {
             min-width: 180px;
         }
@@ -77,24 +75,36 @@
             font-size: 13px;
             margin: 0 auto 50px;
         }
-
-        /*span {
-            margin-right: 17px;
-            font-size: 15px;
-        }*/
-
         input[type=radio] {
             margin: 10px 10px 0 10px;
             transform: scale(2,2);
         }
 
-        /*label {
-            color: #464646;
-            font-size: 15px;
-            font-weight: bold;
-        }*/
+        .login-form .form-control {
+            border: 1px solid #d4d4d4;
+            border-radius: 4px;
+            font-size: 14px;
+            height: 50px;
+            line-height: 50px;
+        }
 
-
+        body#LoginForm {
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 20px;
+        }
+        .main-div1 {
+            background: #ffffff none repeat scroll 0 0;
+            border-radius: 10px;
+            margin: 10px auto 30px;
+            max-width: 100%;
+            /*padding: 50px 70px 70px 71px;*/
+        }
+        .divcard {
+            margin-left:40px;
+        }
     </style>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -106,16 +116,16 @@
     <!-- If you're using Stripe for payments -->
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 </head>
-<body id="payment">
+<body id="payment LoginForm body1 main-div1 " style="background-color:black;padding:30px 30px 30px 30px ">
 
-    <div class="container">
+    <div class="container card" style="background-color:whitesmoke">
         <div class="row">
             <!-- You can make it whatever width you want. I'm making it full width
                  on <= small devices and 4/12 page width on >= medium devices -->
-            <div class="col-xs-12 col-md-6">
+            <div class=" ">
 
 
-                <div class="main">
+                <div class="main col-md-6" style="margin:20px 20px 20px 20px">
                     <h3>PAYMENT OPTIONS</h3>
                     <form asp-action="Success" asp-controller="Order" method="post" id="form">
 
@@ -138,7 +148,7 @@
 
                 <!-- CREDIT CARD FORM STARTS HERE -->
 
-                <div class="panel panel-default credit-card-box" id="divcard">
+                <div class="col-md-4 panel panel-default credit-card-box" id="divcard" style="padding:20px 20px 20px 20px;margin:20px 20px 20px 20px">
                     <div class="panel-heading display-table">
                         <div class="row display-tr">
                             <h3 class="panel-title display-td">Payment Details</h3>
@@ -208,7 +218,7 @@
 
             </div>
 
-            <div class="col-xs-12 col-md-6" style="font-size: 12pt; line-height: 2em;">
+            <div class="col-xs-12 col-md-6" style="font-size: 12pt; line-height: 2em;margin:20px 20px 20px 20px">
                 <div class="container card-deck bg-dark mb-3" style="width:50rem;">
                     <div class="panel panel-default">
                         <div class="panel-heading">
