@@ -66,9 +66,9 @@ namespace BookStoreWebService.Models
             return p.InvoiceNumber;
 
         }
-        public List<Customer> GetCustomer(int id)
+        public Customer GetCustomer(int id)
         {
-            var result = (from c in context.Customer where c.CustomerId == id select c).ToList();
+            Customer result = (Customer)(from c in context.Customer where c.CustomerId == id select c);
             return result;
 
         }

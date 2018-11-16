@@ -80,17 +80,17 @@ using BookStoreWebService.Models.BookDB;
             WriteLiteral("\r\n\r\n<div class=\"login-form main-div\">\r\n    <div class=\"row\">\r\n        <div class=\"col-lg-3\"></div>\r\n        <div class=\"col-lg-5\">\r\n            ");
             EndContext();
             BeginContext(363, 788, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f5bdcd10aea34a5c8106ca499f247b01", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "840cedb248424d4198ac7f66f49547bb", async() => {
                 BeginContext(430, 64, true);
                 WriteLiteral("\r\n                <div class=\"form-group\">\r\n                    ");
                 EndContext();
                 BeginContext(494, 208, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d1e858641f34ca9ab3f10a132d0f510", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f44dc13613b14c78b4fbdb08d309ef11", async() => {
                     BeginContext(582, 26, true);
                     WriteLiteral("\r\n                        ");
                     EndContext();
                     BeginContext(608, 63, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ea81d56b88144126a51510e88a41ab08", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a6d78badd90f41f69672238fed0e876c", async() => {
                         BeginContext(643, 19, true);
                         WriteLiteral("--Select Category--");
                         EndContext();

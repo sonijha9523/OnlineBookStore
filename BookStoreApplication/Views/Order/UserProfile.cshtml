@@ -2,21 +2,23 @@
 @using BookStoreWebService.Models.BookDB;
 @using BookStoreLibrary;
 @{
-    var Customer = (List<Customer>)ViewData["Customer"];
+    var Customer = (Customer)ViewData["Customer"];
     ViewData["Title"] = "UserProfile";
    
 }
 @{
     Layout = "~/Views/Shared/LogoutLayout.cshtml";
 }}
+<div class="card container">
+    
 
-<!DOCTYPE html>
+        <img src="~/images/User.jpg" alt="John" style="width:200px;height:200px">
+        <h1>@Customer.CustomerName</h1>
+        <p>USER ID @Customer.CustomerId</p>
+        <p>@Customer.Email</p>
+        <p>@Customer.MobileNumber</p>
+        <p>@Customer.Address</p>
+        <p><button></button></p>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>UserProfile</title>
-</head>
-<body>
-</body>
-</html>
+    
+</div>

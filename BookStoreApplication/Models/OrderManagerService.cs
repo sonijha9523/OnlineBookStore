@@ -134,14 +134,14 @@ namespace BookStoreApplication.Models
                 return 0;
             }
         }
-        public List<Customer> GetCustomer(int CustomerId)
+        public Customer GetCustomer(int CustomerId)
         {
             HttpResponseMessage message = client.PostAsync("OrderService/GetCustomer/?id=" + CustomerId, null).Result;
 
             if (message.IsSuccessStatusCode == true)
             {
                 string json = message.Content.ReadAsStringAsync().Result.ToString();
-                List<Customer> obj = JsonConvert.DeserializeObject<List<Customer>>(json);
+               Customer obj = JsonConvert.DeserializeObject<Customer>(json);
                 return obj;
             }
             else

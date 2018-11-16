@@ -68,7 +68,7 @@ using BookStoreLibrary;
             WriteLiteral("<div class=\"login-form\">\r\n    <div class=\"main-div1\">\r\n        <p>\r\n            ");
             EndContext();
             BeginContext(329, 36, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b895ddf46a8c40b8812b72c5c2b46271", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65395591a8c94daf9be697ec0508bc67", async() => {
                 BeginContext(352, 9, true);
                 WriteLiteral("View Cart");
                 EndContext();

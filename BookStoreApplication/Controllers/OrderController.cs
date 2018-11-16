@@ -212,7 +212,7 @@ namespace BookStoreApplication.Controllers
             InvoiceId = BookAppservice.SaveDetails(p,PayMode);
             string Cid = HttpContext.Session.GetString("Customer");
             int CustomerId = Convert.ToInt32(Cid);
-            List<Customer> c = BookAppservice.GetCustomer(CustomerId);
+            Customer c = BookAppservice.GetCustomer(CustomerId);
             ViewData["Customer"] = c;
             ViewData["products"] = p;
             ViewData["Invoice"] = InvoiceId;
@@ -224,6 +224,7 @@ namespace BookStoreApplication.Controllers
         [ErrorFilter]
         public IActionResult UserProfile()
         {
+           
             try
             {
                 log.LogInformation("Executing ProcessOrder Method..");
@@ -236,7 +237,7 @@ namespace BookStoreApplication.Controllers
             }
             string Cid = HttpContext.Session.GetString("Customer");
             int CustomerId = Convert.ToInt32(Cid);
-            List<Customer> c = BookAppservice.GetCustomer(CustomerId);
+           Customer c = BookAppservice.GetCustomer(CustomerId);
             ViewData["Customer"] = c;
             return View();
         }

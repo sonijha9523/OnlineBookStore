@@ -89,7 +89,7 @@ using BookStoreLibrary;
             WriteLiteral("\r\n<html>\r\n");
             EndContext();
             BeginContext(290, 2978, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9cd3af28084c4bbdb2e0e9760d087d1f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d58588c5fda4c17b72e6bcd7e57b906", async() => {
                 BeginContext(296, 2309, true);
                 WriteLiteral(@"
     <style>
@@ -183,7 +183,7 @@ using BookStoreLibrary;
     ");
                 EndContext();
                 BeginContext(2605, 51, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f6724fbd56654b398c794049cf568c32", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1fe58bce899846e48267797707884583", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -224,7 +224,7 @@ using BookStoreLibrary;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(3270, 9553, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e49edcf6ea54da38cce8a8b26867f2e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3ffe3f9796254003b7877a829672fb21", async() => {
                 BeginContext(3289, 379, true);
                 WriteLiteral(@"
 
@@ -240,7 +240,7 @@ using BookStoreLibrary;
                     ");
                 EndContext();
                 BeginContext(3668, 763, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "af7af79c23424cd9928308b461934205", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ad11b933e4504589b8826b2b0621fd22", async() => {
                     BeginContext(3742, 682, true);
                     WriteLiteral(@"
 
@@ -300,7 +300,7 @@ using BookStoreLibrary;
                         ");
                 EndContext();
                 BeginContext(5137, 3347, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aea6c8b67a0b49bf8d8ce17397425a44", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "926bf3740d53431693043b30c039b569", async() => {
                     BeginContext(5216, 2798, true);
                     WriteLiteral(@"
                             <div class=""row"">

@@ -27,9 +27,9 @@ namespace BookStoreWebService.Controllers
         }
         [HttpPost]
         [Route("GetCustomer")]
-        public List<Customer> GetCustomer(int id)
+        public Customer GetCustomer(int id)
         {
-            List<Customer> obj = service.GetCustomer(id);
+            Customer obj = service.GetCustomer(id);
             return obj;
         }
     }
