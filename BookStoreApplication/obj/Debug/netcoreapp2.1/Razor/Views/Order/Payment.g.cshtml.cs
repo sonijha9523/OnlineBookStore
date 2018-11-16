@@ -80,12 +80,12 @@ using BookStoreLibrary;
             WriteLiteral("\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(253, 424, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0b080031818e45a8a4fa89655224b608", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b919139529fe48e9881aac1afe11c444", async() => {
                 BeginContext(259, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(265, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e6a86afb1b3c4c079e59c41825c8a111", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "eebc1052cf9f4f7cb402c4163d040cb7", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -125,7 +125,7 @@ using BookStoreLibrary;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(679, 4907, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "aa6ce028ddef45ef95308d1d0a391f65", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f0dfbe8160c0463aae5895cfe45362df", async() => {
                 BeginContext(700, 2520, true);
                 WriteLiteral(@"
 
@@ -299,7 +299,7 @@ WriteAttributeValue("", 5203, "window.location.href='" + @Url.Action("Pay", "Ord
                 WriteLiteral(">PAY</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n       \r\n    </div>\r\n    ");
                 EndContext();
                 BeginContext(5367, 51, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59b732cc14f64afe9220c493829c6e83", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6186476e3b124eb291deadea940ef0c6", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
