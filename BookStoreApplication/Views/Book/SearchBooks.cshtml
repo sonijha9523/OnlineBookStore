@@ -8,30 +8,6 @@
 
 <div class="login-form">
     <div class="main-div1">
-
-        @*<div class="container order">
-            <div class="row">
-                <div class="col-md-3 order-div ">
-                    Image
-
-                </div>
-                <div class="col-md-3 order-div ">
-                    Book Title
-
-                </div>
-                <div class="col-md-2 order-div ">
-                    Book price
-
-                </div>
-
-                <div class="col-md-2 order-div ">
-
-                </div>
-                <div class="col-md-2 order-div ">
-
-                </div>
-            </div>
-        </div>*@
         @foreach (var item in productList)
         {
 
@@ -55,12 +31,12 @@
 
                         <div class="col-md-3 order-div ">
                             <br /><br /><br />
-                            <input value="VIEW DETAILS" class="btn btn-dark" style="width:auto" onclick="@("window.location.href='" + @Url.Action("ViewBook", "Book",new { id = item.BookId }) + "'")" />
+                            <input value="VIEW DETAILS" class="btn btn-dark btn-search"     onclick="@("window.location.href='" + @Url.Action("ViewBook", "Book",new { id = item.BookId }) + "'")" />
 
                         </div>
                         <div class="col-md-3 order-div ">
                             <br /><br /><br />
-                            <input type="submit" value="ADD TO CART" class="btn btn-dark" />
+                            <input type="submit" class="btn btn-dark btn-search" value="ADD TO CART" />
 
                         </div>
                         <input type="hidden" asp-for="BookId" value="@item.BookId" />

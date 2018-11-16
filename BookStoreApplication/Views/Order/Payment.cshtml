@@ -108,7 +108,14 @@
         </div>
     </div>
     <div>
-        <button class="btn btn-success btn-primary" onclick="@("window.location.href='" + @Url.Action("Pay", "Order") + "'")">PAY</button>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 text-center">
+                    <button class="btn btn-success btn-primary" onclick="@("window.location.href='" + @Url.Action("Pay", "Order") + "'")">PAY</button>
+                </div>
+            </div>
+        </div>
+       
     </div>
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
