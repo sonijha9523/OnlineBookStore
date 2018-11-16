@@ -5497,10 +5497,11 @@
       ]
     },
     "System.Collections.NonGeneric/4.0.1": {
-      "sha512": "hMxFT2RhhlffyCdKLDXjx8WEC5JfCvNozAZxCablAuFRH74SCV4AgzE8yJCh/73bFnEoZgJ9MJmkjQ0dJmnKqA==",
+      "sha512": "00tOaRBr5u4JsckEJfBw1eI4Frc5pOFM5gSdqr6oMYjXwQLLhV/LAl2Ty0BgELDvSuqBRBETTgNCMwRuUShk9Q==",
       "type": "package",
       "path": "system.collections.nongeneric/4.0.1",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -6245,10 +6246,11 @@
       ]
     },
     "System.Diagnostics.Process/4.1.0": {
-      "sha512": "mpVZ5bnlSs3tTeJ6jYyDJEIa6tavhAd88lxq1zbYhkkCu0Pno2+gHXcvZcoygq2d8JxW3gojXqNJMTAshduqZA==",
+      "sha512": "4dlFhzwmI3hl32P+8c9hnytYtV7Xldhsokm5i7Fvv5PmTS68TQCfsuJrREIyF9N1B8zlsSomp7AVrXLe45kKFQ==",
       "type": "package",
       "path": "system.diagnostics.process/4.1.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -8158,10 +8160,11 @@
       ]
     },
     "System.Runtime.Loader/4.0.0": {
-      "sha512": "4UN78GOVU/mbDFcXkEWtetJT/sJ0yic2gGk1HSlSpWI0TDf421xnrZTDZnwNBapk1GQeYN7U1lTj/aQB1by6ow==",
+      "sha512": "/ol/Y9N+MghH5YPeeFuad34s2mclOPJJ4fs2hnFHr04QfGpUSBlcbpp/P3fggCNrZXwVKQEKgHu7SnA43Y8ang==",
       "type": "package",
       "path": "system.runtime.loader/4.0.0",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/net462/_._",
@@ -9222,10 +9225,11 @@
       ]
     },
     "System.Threading.ThreadPool/4.0.10": {
-      "sha512": "IMXgB5Vf/5Qw1kpoVgJMOvUO1l32aC+qC3OaIZjWJOjvcxuxNWOK2ZTWWYXfij22NHxT2j1yWX5vlAeQWld9vA==",
+      "sha512": "pA0DnoJ59NlilSdLLwPLKECkTaVF4lbPSM70UqdJQgzJ0r3UHthhlN1T4TmrN6uiXDwPcc2+rI4+5FGtMCdj3g==",
       "type": "package",
       "path": "system.threading.threadpool/4.0.10",
       "files": [
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -9657,11 +9661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OnlineBookStore\\BookStoreWebServiceTests\\BookStoreWebServiceTests.csproj",
+      "projectUniqueName": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreWebServiceTests\\BookStoreWebServiceTests.csproj",
       "projectName": "BookStoreWebServiceTests",
-      "projectPath": "D:\\OnlineBookStore\\BookStoreWebServiceTests\\BookStoreWebServiceTests.csproj",
+      "projectPath": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreWebServiceTests\\BookStoreWebServiceTests.csproj",
       "packagesPath": "C:\\Users\\Training\\.nuget\\packages\\",
-      "outputPath": "D:\\OnlineBookStore\\BookStoreWebServiceTests\\obj\\",
+      "outputPath": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreWebServiceTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9680,8 +9684,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "D:\\OnlineBookStore\\BookStoreWebService\\BookStoreWebService.csproj": {
-              "projectPath": "D:\\OnlineBookStore\\BookStoreWebService\\BookStoreWebService.csproj"
+            "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreWebService\\BookStoreWebService.csproj": {
+              "projectPath": "C:\\Users\\Training\\Desktop\\Finaltill10thOctobe - Copy\\OnlineBookStoreSystem\\BookStoreWebService\\BookStoreWebService.csproj"
             }
           }
         }

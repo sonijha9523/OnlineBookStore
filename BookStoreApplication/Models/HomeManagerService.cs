@@ -159,5 +159,11 @@ namespace BookStoreApplication.Models
             }
             
         }
+        public bool CheckSession()
+        {
+            byte[] ary;
+            bool isavailable = context.Session.TryGetValue("Customer", out ary);
+            return isavailable;
+        }
     }
 }
