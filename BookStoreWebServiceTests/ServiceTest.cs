@@ -162,7 +162,6 @@ namespace BookStoreWebServiceTests
             var result = controller.AddNew(obj);
             Assert.IsInstanceOfType(result, typeof(NotFoundObjectResult));
         }
-        //----------------Orders---------------------------
         [TestMethod]
         public void Orders()
         {

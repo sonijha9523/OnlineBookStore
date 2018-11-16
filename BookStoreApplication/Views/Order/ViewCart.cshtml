@@ -13,12 +13,11 @@
 
     <div class="container order">
         <div class="row">
-
-            <div class="col-md-2 order">
+            <div class="col-md-3 order">
                 BookId
 
             </div>
-            <div class="col-md-2 order">
+            <div class="col-md-3 order">
                 Book Title
 
             </div>
@@ -40,8 +39,8 @@
         {
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2 order-div">@list[i].BookId</div> <input type="hidden" name="[@i].BookId" value="@list[i].BookId" />
-                    <div class="col-md-2 order-div">@list[i].Title</div> <input type="hidden" name="[@i].Title" value="@list[i].Title" />
+                    <div class="col-md-3 order-div">@list[i].BookId</div> <input type="hidden" name="[@i].BookId" value="@list[i].BookId" />
+                    <div class="col-md-3 order-div">@list[i].Title</div> <input type="hidden" name="[@i].Title" value="@list[i].Title" />
                     <div class="col-md-2 order-div">@list[i].Price</div> <input type="hidden" name="[@i].Price" value="@list[i].Price" />
                     <br />
                     <div class="col-md-2 order">
@@ -67,7 +66,7 @@
 
         }
         <div>
-            <input type="submit" class="btn btn-lg btn-dark" value="Place Order" />
+            <input type="submit" class="btn-dark" value="Place Order" />
         </div>
     </form>
 </div>
