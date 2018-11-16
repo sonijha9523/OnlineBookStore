@@ -247,34 +247,6 @@ namespace BookStoreApplication.Controllers
             service.UpdateQuantity(r);
             return RedirectToAction("ReorderLevel"); ;
         }
-        [HttpGet][HttpPost]
-        public IActionResult New(int id)
-        {
-            List<Book> AllBookList;
-
-
-            try
-            {
-                log.LogInformation("Executing GetBooks method");
-                log.LogInformation("This is a Test Message");
-            }
-            catch (Exception e)
-            {
-                log.LogCritical(e.Message);
-                log.LogInformation("Executed GetBooks Method..");
-            }
-            ViewData["Categories"] = serviceBook.SelectCategory();
-
-            if (id > 0)
-            {
-                AllBookList = serviceBook.GetAllBookById(id);
-                return View(AllBookList);
-            }
-            else
-            {
-                AllBookList = serviceBook.GetAllBooks();
-                return View(AllBookList);
-            }
-        }
+        
     }
 }
