@@ -1,12 +1,12 @@
 ﻿
 @model IEnumerable<BookStoreWebService.Models.BookDB.Book>
 @{
-    Layout = "~/ Views / Shared / LayoutLayout.cshtml";
+    Layout = "~/Views/Shared/LogoutLayout.cshtml";
 }
 
 <!DOCTYPE html>
 
-    <div class="container-fluid card" style="width:40rem;">
+    <div class="container-fluid card" style="width:400px;">
         @foreach (var item in Model)
         {
             <br><h2 style="text-align: center;">@item.BookTitle</h2>
@@ -14,17 +14,17 @@
 
                 <div class="col-sm-4">
                     <br />
-                    <img class="img-fluid img-thumbnail img-circle mx-auto d-block align-content-center" src="@item.Image" style="width:200px;height:250px ; ">
+                    <img class="img-fluid img-thumbnail img-circle mx-auto d-block align-content-center" src="@item.Image" style="width:180px;height:180px ; ">
                 </div>
                 <div class="col-sm-8">
-                    <br /><br /><br />
-                    <table class="table table-striped" style="color:whitesmoke">
+                    <br />
+                    <table class="table table-striped" style="color:black">
                         <tr>
-                            <th>
+                            <th >
                                 @Html.DisplayNameFor(model => model.Price)
                             </th>
                             <td>
-                                @Html.DisplayFor(modelItem => item.Price)
+                                Rs.@Html.DisplayFor(modelItem => item.Price)
                             </td>
                         </tr>
                         <tr>
@@ -58,8 +58,6 @@
             </div>
         }
         <div style="text-align:center">
-            <button class="btn btn-primary" style="margin:20px;" onclick="@("window.location.href='" + @Url.Action("SearchBook", "Book") + "'")">Go Back</button>|
-            <button type="button" class="btn btn-primary" style="margin:20px;">Delete</button>|
-            
+            <button class="btn btn-primary" style="margin:20px;width:100px" onclick="@("window.location.href='" + @Url.Action("GetCategory", "Book") + "'")">Go Back</button>
         </div>
     </div>
