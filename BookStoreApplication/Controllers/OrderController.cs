@@ -212,7 +212,7 @@ namespace BookStoreApplication.Controllers
             InvoiceId = BookAppservice.SaveDetails(p,PayMode);
             string Cid = HttpContext.Session.GetString("Customer");
             int CustomerId = Convert.ToInt32(Cid);
-            Customer c = BookAppservice.GetCustomer(CustomerId);
+            List<Customer> c = BookAppservice.GetCustomer(CustomerId);
             ViewData["Customer"] = c;
             ViewData["products"] = p;
             ViewData["Invoice"] = InvoiceId;
@@ -237,7 +237,7 @@ namespace BookStoreApplication.Controllers
             }
             string Cid = HttpContext.Session.GetString("Customer");
             int CustomerId = Convert.ToInt32(Cid);
-           Customer c = BookAppservice.GetCustomer(CustomerId);
+            List<Customer> c = BookAppservice.GetCustomer(CustomerId);
             ViewData["Customer"] = c;
             return View();
         }

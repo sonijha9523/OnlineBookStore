@@ -2,23 +2,27 @@
 @using BookStoreWebService.Models.BookDB;
 @using BookStoreLibrary;
 @{
-    var Customer = (Customer)ViewData["Customer"];
+    var Customer = (List<Customer>)ViewData["Customer"];
     ViewData["Title"] = "UserProfile";
    
 }
 @{
     Layout = "~/Views/Shared/LogoutLayout.cshtml";
 }}
-<div class="card container">
-    
+<div class="LoginForm" style="text-align:center">
+    <div class="main-div1" style="width:400px;align-content:center">
+        @foreach (var c in Customer)
+        {
 
-        <img src="~/images/User.jpg" alt="John" style="width:200px;height:200px">
-        <h1>@Customer.CustomerName</h1>
-        <p>USER ID @Customer.CustomerId</p>
-        <p>@Customer.Email</p>
-        <p>@Customer.MobileNumber</p>
-        <p>@Customer.Address</p>
-        <p><button></button></p>
-
-    
-</div>
+            <img src="~/images/User.jpg" alt="John" style="width:200px;height:200px">
+            <div class="card">
+                <h1>@c.CustomerName</h1><br />
+                <p>USER ID @c.CustomerId</p>
+                <p>@c.Email</p>
+                <p>@c.MobileNumber</p>
+                <p>@c.Address</p>
+                <p><button></button></p>
+            </div>
+        }
+        </div>
+    </div>

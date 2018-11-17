@@ -21,7 +21,7 @@
 </head>
 <body id="LoginForm">
 
-    <div class="container card-deck bg-dark mb-3" style="width:50rem;">
+    <div class="container card-deck bg-light mb-3" style="width:45rem;text-align:center;border-radius:20px">
         <div class="login-form">
             <div class="row">
                 <div class="col-xs-12">
@@ -106,17 +106,19 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div>
+
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-12 text-center">
-                    <button class="btn btn-success btn-primary" onclick="@("window.location.href='" + @Url.Action("Pay", "Order") + "'")">PAY</button>
+                    <button style="width:50px" class="btn btn-success btn-primary" onclick="@("window.location.href='" + @Url.Action("Pay", "Order") + "'")">PAY</button>
                 </div>
             </div>
         </div>
-       
+        <br />
     </div>
+    
+       
+
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>

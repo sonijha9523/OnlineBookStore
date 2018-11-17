@@ -46,12 +46,10 @@ namespace BookStoreApplication.Controllers
             serviceBook.context = HttpContext;
             string json = JsonConvert.SerializeObject(s);
             bool isavailable = serviceBook.context.Session.TryGetValue("CatSubCat", out ary);
-            if (isavailable == false)
-            {
-
+            
                
                 serviceBook.context.Session.SetString("CatSubCat", json);
-            }
+            
                 var result = service.SearchBooks(s);
 
 
