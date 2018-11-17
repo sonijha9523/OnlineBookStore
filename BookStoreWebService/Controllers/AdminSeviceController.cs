@@ -60,7 +60,6 @@ namespace BookStoreWebService.Controllers
         {
             int result = service.RemoveBook(id);
              return Ok(result);
-           // return null;
         }
     
         [Route("EditNewBook")]

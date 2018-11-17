@@ -25,7 +25,7 @@ namespace BookStoreApplication.Controllers
             serviceBook = new BookManagerService();
             service = new HomeManagerService();
             this.log = log;
-            //service = new HomeService(this.context);
+            
         }
         [HttpGet][HttpPost]
         public IActionResult Index(int id)
@@ -67,8 +67,6 @@ namespace BookStoreApplication.Controllers
         [ErrorFilter]
         public IActionResult Register(Customer c)
         {
-           
-            //context = new BookStoreDBContext();
             var result=service.AddRecord(c);
             if (result == 0)
             {
@@ -93,7 +91,7 @@ namespace BookStoreApplication.Controllers
             return View();
         }
         [HttpPost]
-       // [ErrorFilter]
+      
         public IActionResult Login(Credentials credentials)
         {
             try
@@ -142,11 +140,6 @@ namespace BookStoreApplication.Controllers
                 ModelState.AddModelError("Password", "Incorrect UserId Or Password..........");
                 return View("LoginAdmin", credentials);
             }
-            /*  HttpContext context;
-
-              var key = "my-key";
-              var str = JsonConvert.SerializeObject(obj*/
-            //   context.Session.SetString(key, str);
             return RedirectToAction("Admin", "Home", new { area = "" });
 
         }
@@ -173,25 +166,10 @@ namespace BookStoreApplication.Controllers
             service.context = HttpContext;
             return RedirectToAction("AddBook");
         }
-        //public IActionResult RemoveBook()
-        //{
-        //    return View();
-        //}
         [HttpGet]
         [ErrorFilter]
         public IActionResult RemoveBook(int id)
         {
-            //try
-            //{
-            //    log.LogInformation("Executing GetCategoy method");
-            //    log.LogInformation("This is a Test Message");
-            //}
-            //catch (Exception e)
-            //{
-            //    log.LogCritical(e.Message);
-            //    log.LogInformation("Executed GetCategoy Method..");
-            //}
-
             service.RemoveBookRecord(id);
             return RedirectToAction("GetBooks");
         }
@@ -203,15 +181,12 @@ namespace BookStoreApplication.Controllers
         [ErrorFilter]
         public IActionResult SaveChanges(Book b)
         {
-
-            //service.EditBookRecord(b);
-            return View();
+           return View();
         }
         public IActionResult GetBooks()
         {
             List<Book> AllBookList = service.GetAllBooks();
-            // SelectList list = new SelectList(resultlist, "CategoryId", "CategoryTitle");
-
+            
             return View(AllBookList);
         }
         [ErrorFilter]

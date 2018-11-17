@@ -100,19 +100,7 @@ namespace BookStoreApplication.Controllers
                 log.LogCritical(e.Message);
                 log.LogInformation("Executed ProcessOrder Method..");
             }
-            /* List<ProcessOrder> productList = new List<ProcessOrder>();
-             foreach (var i in p)
-             {
-                 ProcessOrder obj = new ProcessOrder();
-                 obj.BookId = i.BookId;
-                 obj.Price = i.Price;
-                 obj.sum = (int)(i.Price * i.Quantity);
-                 obj.Quantity = i.Quantity;
-                 obj.Title = i.Title;
-                 //if(productList.Find(obj))
-                 productList.Add(obj);
-
-             }*/
+           
             BookAppservice.context = HttpContext;
             BookAppservice.StoreFinalProductsInSession(p);
              ViewData["products"] = p;
@@ -138,21 +126,9 @@ namespace BookStoreApplication.Controllers
             List<ProcessOrder> productList = new List<ProcessOrder>();
             BookAppservice.context = HttpContext;
             ProductViewModelCart[] p = BookAppservice.GetFinalProductsFromSession();
-            //foreach (var i in p)
-            //{
-            //    ProcessOrder obj = new ProcessOrder();
-            //    obj.BookId = i.BookId;
-            //    obj.Price = i.Price;
-            //    obj.sum = (int)(i.Price * i.Quantity);
-            //    obj.Quantity = i.Quantity;
-            //    obj.Title = i.Title;
-            //    productList.Add(obj);
-
-            //}
-            // BookAppservice.StoreFinalProductsInSession(p);
+           
              ViewData["products"] = p;
-            // TempData["SelectedProducts"] = p;
-            // return RedirectToAction("Pay", "Order");
+           
             return View();
         }
         [HttpGet]
@@ -173,20 +149,9 @@ namespace BookStoreApplication.Controllers
             List<ProcessOrder> productList = new List<ProcessOrder>();
             BookAppservice.context = HttpContext;
             ProductViewModelCart[] p = BookAppservice.GetFinalProductsFromSession();
-            //foreach (var i in p)
-            //{
-            //    ProcessOrder obj = new ProcessOrder();
-            //    obj.BookId = i.BookId;
-            //    obj.Price = i.Price;
-            //    obj.sum = (int)(i.Price * i.Quantity);
-            //    obj.Quantity = i.Quantity;
-            //    obj.Title = i.Title;
-            //    productList.Add(obj);
-
-            //}
-            // BookAppservice.StoreFinalProductsInSession(p);
+          
             ViewData["products"] = p;
-            //TempData["SelectedProducts"] = p;
+           
             return View();
         }
 

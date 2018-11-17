@@ -66,7 +66,6 @@ namespace BookStoreWebService.Models
        
         public int RemoveBook(int id)
         {
-            //context.Book.Remove(id);
             var result = (from b in context.Book where b.BookId == id select b).SingleOrDefault();
             if (result != null)
             {       context.Book.Remove(result);

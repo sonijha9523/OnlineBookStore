@@ -52,7 +52,6 @@ namespace BookStoreApplication.Models
                 bool isavailable = context.Session.TryGetValue("Customer", out ary);
                 if (isavailable == false)
                 {
-                    //   string Cust = JsonConvert.SerializeObject(customerId);
                     context.Session.SetString("Customer", customerId);
                 }
                 return 1;

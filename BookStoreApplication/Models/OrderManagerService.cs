@@ -27,8 +27,6 @@ namespace BookStoreApplication.Models
             string json = "";
             byte[] ary;
 
-            // json = context.Session.GetString("CatSubCat");
-            // SubCategory subcategory = JsonConvert.DeserializeObject<SubCategory>(json);
             bool isavailable = context.Session.TryGetValue("Cart", out ary);
             if (isavailable == false)
             {
@@ -53,12 +51,10 @@ namespace BookStoreApplication.Models
 
         {
 
-            // List<ProductViewModelCart> serializedObjects;
             string json = "";
             byte[] ary;
             bool isavailable = context.Session.TryGetValue("Cart", out ary);
             json = context.Session.GetString("Cart");
-            //serializedObjects = JsonConvert.DeserializeObject<List<ProductViewModelCart>>(json);
             List<ProductViewModelCart> list = JsonConvert.DeserializeObject<List<ProductViewModelCart>>(json);
 
             List<ProductViewModelCart> result = (from c in list
@@ -80,7 +76,6 @@ namespace BookStoreApplication.Models
             byte[] ary;
             bool isavailable = context.Session.TryGetValue("Cart", out ary);
             json = context.Session.GetString("Cart");
-            //serializedObjects = JsonConvert.DeserializeObject<List<ProductViewModelCart>>(json);
             List<ProductViewModelCart> list = JsonConvert.DeserializeObject<List<ProductViewModelCart>>(json);
 
             List<ProductViewModelCart> result = (from c in list

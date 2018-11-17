@@ -31,7 +31,6 @@ namespace BookStoreWebService.Controllers
         [Route("SelCategory")]
         public List<Category> SelCategory()
         {
-            // int id = 400;
             List<Category> allcat = service.SelCategory();
             return allcat;
 
