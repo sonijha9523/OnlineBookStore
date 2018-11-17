@@ -218,6 +218,7 @@ namespace BookStoreApplication.Controllers
             ViewData["Invoice"] = InvoiceId;
             ViewData["PaymentMethod"] = PayMode;
             //TempData["SelectedProducts"] = p;
+            HttpContext.Session.Remove("Cart");
             return View();
         }
         [HttpGet]
