@@ -60,12 +60,14 @@ namespace BookStoreApplication.Controllers
                     log.LogInformation("Executing ViewCart Method..");
                     log.LogInformation("This is a Test Message");
                     BookAppservice.context = HttpContext;
-                    ViewData["products"] = result;
+             //      ViewData["products"] = result;
                 }
                 else
                 {
 
                 }
+                ViewData["products"] = result;
+
             }
             catch (Exception e)
             {

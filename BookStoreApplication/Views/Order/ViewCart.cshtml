@@ -6,70 +6,87 @@
     var list = (List<ProductViewModelCart>)ViewData["products"];
     Layout = "~/Views/Shared/LogoutLayout.cshtml";
 
+
 }
 
-<div class="login-form main-div1">
+@{
+    if (list.Count == 0)
+    {
+        <div class="container">
+            <div class="row main-div">
+                <div class="col-12">
+                    <h1 style="font-size:30px;color:red;text-align:center"><b>Sorry , Cart is Empty!</b></h1>
 
+                    <img src="https://gifimage.net/wp-content/uploads/2017/10/crying-emoji-gif-5.gif" style="width:250px;height:250px;padding:20px 20px 20px 20px" />
 
-    <div class="container order">
-        <div class="row">
-            <div class="col-md-3 order">
-                BookId
-
-            </div>
-            <div class="col-md-3 order">
-                Book Title
-
-            </div>
-            <div class="col-md-2 order">
-                Book price
-
-            </div>
-            <div class="col-md-2 order">
-                Quantity
-            </div>
-            <div class="col-md-2 order">
-
-            </div>
+                </div>            
+                </div>
         </div>
-    </div>
+    }
+    else
+    {
+        <div class="login-form main-div1">
 
-    <form asp-action="ProcessOrder" asp-controller="Order" method="post">
-        @for (var i = 0; i < list.Count; i++)
-        {
-            <div class="container">
+
+            <div class="container order">
                 <div class="row">
-                    <div class="col-md-3 order-div">@list[i].BookId</div> <input type="hidden" name="[@i].BookId" value="@list[i].BookId" />
-                    <div class="col-md-3 order-div">@list[i].Title</div> <input type="hidden" name="[@i].Title" value="@list[i].Title" />
-                    <div class="col-md-2 order-div">@list[i].Price</div> <input type="hidden" name="[@i].Price" value="@list[i].Price" />
-                    <br />
-                    <div class="col-md-2 order order-div">
-                        <select name="[@i].Quantity">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
+                    <div class="col-md-3 order">
+                        BookId
+
                     </div>
-                    <br />
-                    <div class="col-md-2 order-div">
-                        <button class="btn btn-secondary " type="button" style="color:black" onclick="@("window.location.href='" + @Url.Action("UpdateCart", "Order",new {id = list[i].BookId}) + "'")">
-                            Remove
-                        </button>
+                    <div class="col-md-3 order">
+                        Book Title
+
                     </div>
+                    <div class="col-md-2 order">
+                        Book price
 
+                    </div>
+                    <div class="col-md-2 order">
+                        Quantity
+                    </div>
+                    <div class="col-md-2 order">
 
-
+                    </div>
                 </div>
             </div>
 
-        }
-        <div>
-            <input type="submit" class="btn btn-lg btn-dark" value="Place Order" />
+            <form asp-action="ProcessOrder" asp-controller="Order" method="post">
+                @for (var i = 0; i < list.Count; i++)
+                {
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3 order-div">@list[i].BookId</div> <input type="hidden" name="[@i].BookId" value="@list[i].BookId" />
+                            <div class="col-md-3 order-div">@list[i].Title</div> <input type="hidden" name="[@i].Title" value="@list[i].Title" />
+                            <div class="col-md-2 order-div">@list[i].Price</div> <input type="hidden" name="[@i].Price" value="@list[i].Price" />
+                            <br />
+                            <div class="col-md-2 order order-div">
+                                <select name="[@i].Quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <br />
+                            <div class="col-md-2 order-div">
+                                <button class="btn btn-secondary " type="button" style="color:black" onclick="@("window.location.href='" + @Url.Action("UpdateCart", "Order",new {id = list[i].BookId}) + "'")">
+                                    Remove
+                                </button>
+                            </div>
 
+
+
+                        </div>
+                    </div>
+
+                }
+                <div>
+                    <input type="submit" class="btn btn-lg btn-dark" value="Place Order" />
+                </div>
+            </form>
         </div>
-    </form><br />
-    <input type="submit" value="CONTINUE SHOPPING" class="btn btn-lg btn-dark" onclick="@("window.location.href='" + @Url.Action("GetCategory", "Book") + "'")" />
-</div>
 
+    }
+}
