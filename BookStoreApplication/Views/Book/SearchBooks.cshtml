@@ -53,9 +53,10 @@
         }
         <div class="container">
             <div class="row">
-                <div class="col-12"><br /><br />
+                <div class="col-12">
+                    <br /><br />
                     <input type="submit" value="VIEW CART" class="btn btn-lg btn-dark" onclick="@("window.location.href='" + @Url.Action("ViewCart", "Order") + "'")" />
-
+                    <input type="submit" value="CONTINUE SHOPPING" class="btn btn-lg btn-dark" onclick="@("window.location.href='" + @Url.Action("GetCategory", "Book") + "'")" />
                 </div>
             </div>
         </div>
