@@ -1,6 +1,9 @@
 ﻿@using BookStoreLibrary;
+@model BookStoreApplication.Controllers.OrderController;
+@using BookStoreWebService.Models.BookDB;
 @*@model IEnumerable<BookStoreApplication.Models.ProcessOrder>*@
 @{
+    var Customer = (List<Customer>)ViewData["Customer"];
     ViewData["Title"] = "Payment";
     var list = (ProductViewModelCart[])ViewData["products"];
 }
@@ -21,7 +24,7 @@
 </head>
 <body id="LoginForm">
 
-    <div class="container card-deck bg-light mb-3" style="width:45rem;text-align:center;border-radius:20px">
+    <div class="container card-deck bg-light mb-3" style="width:40rem;text-align:center;border-radius:20px">
         <div class="login-form">
             <div class="row">
                 <div class="col-xs-12">
@@ -31,21 +34,18 @@
                     <hr>
                     <div class="row">
                         <div class="col-xs-6">
-                            <address>
-                                <strong>Billed To:</strong><br>
-                                John Smith<br>
-                                1234 Main<br>
-                                Apt. 4B<br>
-                                Springfield, ST 54321
-                            </address>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAI4AAACYCAMAAAAFrCG8AAABO1BMVEX///8AAAAREiSYmJ37+/vy8vLv7+/39/fr6+seHh7h4eHk5OQ5OTlUVFQTExNubm5LS0vU1NRBQUFaWlotLS11dXW1tbVGRkYoKChlZWWlpaV8fHzDw8Pa2tqMjIyDg4OdnZ3pAACUlJTqISMAABsAABfhJCbrQULpGBvZJCaiEhQkAAAvMDlDRE72AAD+2NhBAABrbHRZWmH1r7AOAAD/7Ow0AABoAADFnp8XJyfwEBP0mpv73+D3vb7xhISFISJVCgzlw8TuWVkcBQWlLC3Xr7BxEhTIICH1pabsTE4uBgfvbm+1HR7weXpONjaTGBoKGRnUCg3ZVFYmGRjgqKfPbW8fHyx+EBJtOjryOTvPg4Skfn+RAACQeHieYmNbAADBP0C8iIjMNzi1o6Ohi4uHRUa5SUpjR0iHZmYoTnOZAAAS8UlEQVR4nO1baXsUR5LuhLrvrCO7jqxD1ToajBASlvEIwWB5FoGBwcx65NXau17bM979/79gI7KOrr4kDQjsD4pHSKhUx1txvhGZPRrdyI3cyI3cyI3cyKcXVTNzylkKwjjNTUX93aBItCoTSycD0f2kTOmnh6LklU/WisfyT6mlvPTWY2kkqLVPg8VM9cuwNOJz5aOD0Ypw9kAnXIkjsNr/jNOPC0bJ5p67Gk4w1F718WwmpclVjDRvS599JDRs9gx7AUCCEJLVpiPjjxH5mrviSQ68PXWIJ6fw1BGcUbNVZ9XSdaPBx8y7SugQX7aIpVjE1jSPUMklTi7F4C/lIiDrmhUkHuBYswcEVAlILEMupC6xzYq5lEckNI2MlKNlFTnXGWPmUtYbS6kNlqIQaYwRW3HM3OYu8fKSublRwBket+auKK8tTxvLeS+lTgxmSeWEFDnAIW5JaERqbpmGb0IAjvPRQhh614SHO8ve6WuqLNekMEPCKQlUPEYr/KoTC+DrRmEEGHLDa4xrQTPnA5VZxPif2A8D1XJyDbRBQpEdI2tMAQKqS6c50SAbFCofVFrd/HA0c24ZmbRWBT4nTHiuE8cdpKDWWaqUUE4VxSOOkjFlcEKYX6tuCMsJyUWUBYZCF9Ne0JQQ3bFZ4vrymPDcIWba/NFFB9Q/sGTQgRePQxIrJWuCXrctcpF4RA4DmeZMtUmCMF1hY/+Dirw5QJOoEL/RiDPFvFLpKnWtGMsMzq3p7Kj/AQlaGuSbTCqwJtCUWOmqerFCKt3THF9kpgHK94cTDW6jMFJLIfFH4wsAWAsW9BUMLJ7WJieOuNAn1fuimQsqW+YyhnF0EZxFcQo4O1Y15lq2LdIX6HsxvCReXCXijPlbB5Bmi1G8qI8gqjg1FcWkvHaDxT8TzDZ9dLoNooE7KzQFwK50BY+aOazFKbhxbaajBa8puTF3IzVnS36Van08CFd0nKI922QuKq/KrxL+VX9Db8TQ+HDjuZd3+fwFh3tPjvEnCwYnhU5fYmh/NR9JBsfo9yJ+1UpWdBePFcg0oQaXd3kPE22yaO+9naON8ydCR4PKEM4KnmcTXXQh47pGPm0zKrfXapc6T9a7bDnC160H+TkEurN4vvpyOplMNh42v/EVSdKFFxxzNKbnuHV/A4MX+ti7BA0dlPFkVGO0Dv1hWcXH55NtQLR92L7vAiPsbgcG09Ni3BZTKa/R+212WbGfS7xjjRXqrEKNV6kW4UgPN6aPuwNsjiV15tOBysbErUcjOU+TqCRBRS8Pq1laT+lYlOKkf0FbXnXF4cvJ9HhvY3LeK85YEfWOo9Ms9WKbsbQMnFox2tMvhpSQsHmfSmGyJ3iU01aMcs2Vr6bTJ6OdycZef2TGLfzuVXyLJMRFRZcl61+LapF9ER7wHEtUCE/1iVYn0SxUonXXPT2avhg9nh49nR3SOofu23rXhpeyYlJmrcElhWeWq6bJRXD6IK9HiTcyjbwPFHftZY+PwG+eTCcnHRZe9NoJ+sAI0Sl9MCM2pzKvgO57UXpxnEu9LvRIG6VAqHqtr/QbIWCsh6O97cmOim5ae0CYvZTO8+xZTtTHBrgQNDyVcWkiHNZOPZWbGHEiuHr9a0BkHe2NDs+n51+lcCbxKjFPGWSrzIt5Rcad1SriFbxjzypn61+0j/LQg6u9vFE6JNgL2v830+nJSDX+5/ln0B5GXG6Nqs4yRmARN3M6L0wkpT1FlpXEuYBHm52nJIqsDvNrsh7N3v3J9Oca0/fzL/POv8w0sxas5PQFrWncDZaN/SIpmLHWKTtbOUrtOEyb2W197jz+5e0DSLl29ctkIiJdNXkJECyXN3dLhRfPUin8jWu0DAPHSph2Ydbp9Fsi43FmzHgdrwQlwHMe1OAJ0s5kG8o6r/EiNxU1stFHbAOEctwBynT8miuj6+CQIRySdxTVWdEFqEAU4EUfPHo9FcV8b3v7l1/B1eJgxvAab44BSOa7HW3xoAwXPUMx89Qia6YceW8cHNtkPbpi6UwqnCVhv21P7r/AA8oPj8BmYdlHzIhWSUgc0MNYJHW7awYScKpOLXUdIXta06POeJcPTqn0yplzfY2mQgl1jvl4AhnQ5AXq6aef1ZF0/OQVVNT/RCLmBEXto+n6CpbUaCyo+BrkJ+bGjh+UfL33DPuHJOvLgz8wEcPDOlBT/O3FxmTyW5XA45If3m1P9548PTm6P339/Bkhf8o4vJHqEOEmzdRwbJYkLdGrXZG2XZavTzmQBhYGf520OQfYEmLL+rT11bu78GAnKcD2J0DB7m+8O/3+G9DTf9x917KNIlZB5TZeGIiXjZu4D91+sCoZRrkycI01E0c0LRVsKUh7si3z7K+EfJ01FP4xoDl9+xNg8VN+/GRjeqJi31IGdcAhCXZ1tMk9nut1z5fMwg4jh6+CQ1ejCSj2tyTjfQCYvAbkXzy/+65lgPLp3Z8I+RYipvGEjckvrPJQCZiBPMJIwyj1qvEjC19K4eCEiZtUawKLr4YDd4wzbnYul1dBiGP1r+5MjkRQqTyDJ3/r8r4kfvfjM9CTlVINKoUOzhbrZjPjaG0V5xpL4HhY8PWJMF0NJ2FdIEpUNFOgBFXQihPgEjUqYUAUcoZc+cF/8cbD6vYmFnFAM2neRhlYzytZb3i6qmwVnTLmpdWlwqMxBApkCaEE9eVk+79xvm1VdOZPJbCLz3+6e2faUDEJk4XX9Hx2ouuoVx/9x+uDSlKgbybuCjjC9fXFZhJTMijBXlDCr8+/hrvWfZgpQKiABMApT+5vTJGpGqxZVOHgBF4cg9kACCYkLyGt70LGgr7LKtNVibApUYu02zFSG9KrX+VtqZBkHvk6+ezRD1qLRdVS4U+gJ/SEw8M309N/joGFBQzCQ6c+CYAz12OSFAF4TJqQFNtoJGqOnZprBlEBWSN2zTt7gBLENOOH07aAQ79dQtofFzMP42JBxa0oWFVxILoBajwOIT4zEhCPahWJWASemqR8XR6E5mfF2Ba1w7U2YmQtLeGV/TpXVeBcr0BPtLAcEgNRaE9RTQb+9PkX35/+rYUvXgfwxyTwiAPlVM89H+f4GlfWBZUmiMIADtC6LieGzSmGUIJdYDjsvXh1NDn6slNCTxRYgd1C+fMd6JFFmaepmFMm3fwgBs1aGDFLfX4nqsojp/KthKtNjbBwCThmPdfRRxKyJSRRDIjn4d6T0dONd3d/+hr0VNKWikoKZZhHbAZxh6Xs6LHCAYrjRVYoXg+/wj7t16uxAFuCSHJzkcFaV7bmndmpEhI5SYqeAGo5v7/N/+8BKoH1b9goIajaJdDDV3def4/VLGNGTiJ4y4BYPrRvJaakMF4HB5JS7NU9wR0UdKeHFOu6V6FrIHWYvjt9+xlASdIuSQMLA/bteNnMZAaWh2+e/UOcIjK9PnZBccRrRmD41iuXceSU97WM1u7Ad7xerUXSFHRpev/0LTQL5NmPP3eRCWkPeU0005ORos95/3i9PRUDqI59Cx4/WCpdWTO7u+ZpgG4mAn0xvGyeilM4aP/zZ9+/3p5M3wglUFzet4K0eyHVoBHoaRxx9fhkMtmBU8y0o4C6QCKayCy+CI7CcKXeKZnRKJYtTrKTesRL9PLndyFiUHYOjRQSO/Fn6UiC9CruIjxsMp0cfccyyydWq+WGylkIB9uMdewYI8Z3WaN9JBjOyl0E4Cza3obAsn3n9aPPQWlZP9sDPcFFcdJT3ofvXn8PF42BqMm+I/RCa9JrBt15TaMU+2lfAEdr8iBplHC4A1hOMWLI/852WihpBHqKiwFlrz2A++yuSLg5VFjx/IIUcF5oCXfQvUsWKDRezYe3NZs8eI2htb//+AAj5u3p9GVjIINj4I5L1mGTBat3kuqrnelEuHLDL7CLKONuSdX1jQvXA8wKfcNPcZWuXabTqz4KrNDFtI3O8tk/f9veRosBCaRYi0nA8j7MmlmxYPVvJpOpwAgXdQPwHg7YbLlTaiVnmG3sUngCvsuKXR9OJtjSr5Pp+Y5wn9Mf0G+TesBWcSXQjwShOn4MrrwhiCLHrCpej49kpVl/Ak1VawcQAfYXRpvCMLSwZVqK9kYJjSvfff4FKoHO2GqNJdtOhZ6OX5ycH0HJeiP+WnqQd5BApWZmZbIgqA6w1rUtP+3fME/zLvfpC+HVzn6fQsR8LSj737qc3LB60JOEs/eHb843MP42XjZDZhOybzPWFWssZdsb2ME6NKPutsAqfWqL9DBejnUm0vZfMSe/vQPec4QdhMxd71vs70xZAiQnO5MjaG+mR9OXD9sGoyQx9GYBMBsFle7ShlFlF+0VkQVbghoprSXvJGwo+59fbzeJ8P53grJ/8egvf3/8+NVL0MkGTt6nGxs7bx4e9/oGCDjySjySAl2wjEr4kZVfUCIqpA5FwyrFDdYAyrgmQ6t5jp789sG/k88fvD3dRmUcCSAgk/OTF8eHA0rVsW4sgKliKK2tWHXBpJ1nPatUabUcV+2wUtzh8dHRv/0FKfuzP/Ov7iOUo6MNlJ2Tpy+eHC/ceTZnxF4ndFtC5xSr2oZOOqfUKGRwfbktjhuEngoU68tHX/yJfPP89Z3JdO9wcv7yMciLh0+ODw9XzECxpYLKia5emHxMZksVF5VzFGSVSa2XqaEtwekkwonOZ8/vnoJhNjZe7o32Di+8p4ReA6SrKcngFDM/uPA6s8auNTBVkXzcMFsHyK/Mk+n0aLLz6snh5WsbLZdzPL/Qco1audLhWU1MO2HDvkWqx9UqKNgRMRzovHqxd6VVut40tltVtZIQxtspqn7JoL0rOgpNUU8r4Yh+ko2kKy8YJv0yFhqN0wr3H4m15uhKN6BIFPyCpyvhNFJdEQxYql+LYBIyTW70vfZlq424WOo4IbBKoaeGEwzohj0bimUXDc96MQftbG0USjfFILy4gnIwOzV9i5AmXbir93OOr7AxaLh/JVQC4koVCRGhxcEDL92aplSDxdJSqMVev7m0uERB89v6AjEM1ijBeNXtf2UjRl7jnkSPMXLhrlvvws2S1fxCsaWgWnJKvHYOe6VtPBBUWEaDhlCVSbBYu5LhAX3lOAY1Mx8GpRkTV62ivNtDFsRX2fepiAAs+9meFi/aqhwtvHS0nOgltrBnpJYouGVk4MpxU/nGwVX28MhBlM4pcXFmWS7uwBCvKjaEyKoqKwZl9ZKBUy0gpogL8ESc/Fs6udoOuSXvzGb01AmAi6MR6qWdTY5ueTaIZ+F64Lz4ztgnhSbXSKU6Zb/vFl0p6Y0T0DQQeyvZ0pzXIsRZFYJj+EMOTA5qgzWKZlv03397kzHnupjgScpItLTD1V61xSipQxJoPgH9MG3cKdpJP2Az2lAVvhaSODW5LkfBVTZ/WXzEXRnc2KGDlOhcKaOvkwFt1l2HUFppJiXVHMwVVLYJSi8fVUZEXB4T1s1pLiNdl8h8DlHh5qpPsPlJul5+eaeFS6WmxgCWTC5yFyIhbRjvB6IZbDhASdWM1vjD5Kar5/NpCFQS+2CWRE6DJvvSNNKoD4eZQ8Rw7xp2LdfDR7qKie9YBMCsbLHJEWhn5NuY3DyrNGXZJaxb88lczSxxrBi52FO/f4ivx4MrrIRXOSgNPKi2iJI4hp2J3U/hKNLrnASmaSqo1FJvxl2Z8ED9OnSDsrRXnEr4AFqmKvNNRzespEA4HiQGS4b4S+xMGRiyTZ0f7Ded8AV3LYWDG5z7eWnEsRlypawZiRWfxBrOwGw+23MNrB09yb/G3ffGio8bBRL4jkEVGhpRbpsAx8H9Q7gBDzLOGH7Fi+IEPyUAmfJaP02iFktwbGbhHpGEhQaQLS6zBgoQJdy15gRigY/oDBK57lfXCQZl1ecxMt2jcWwBzSMWnpDipze8ekiLLB/N9RE+RyJhqVo1THAEibW7BG7NLXzbJQnXDt0+TLhFlijEQA8rj/r8ej4AsFLYJbuDl3cEBB/1U3UyW99dOIQsDqqsK+9wfW/h69iFpc+vW+rZJ/kMpJTPl3mrJcie1ZSQRsJL95Feo9C5aG6N1R+J3eoaPjDyLwlwjMLSlzHpdrtw/XuIwdOqzCI3SdwoK6t03RalTyqSpKpX2T1/IzdyIzdyIzdyIzdyIzdyodz+Q8losRX4fWV06w8lAs7m3KGtrc3mwNbvBGf31r0z+HG2e+tsc/NsP9sNyObW1tb+2a2De58ezub+vYP9g3vJQbZ7kCT7bPeAJdXBfpEm+7vXB2fz1iaofRN/ovbh29YWfj/DI2dnAzi78GzAcu8gIvv75IBlWUpYQSp6bVi2koP93d2D3d3dzMVvu2fw/eBgt7gHD47cct8tiq1bne/UB9kBnL+/72X7fpFmaVVXt8u0OeV6pC7gmbdv75e3o9v7t6OD8na5n8JDywOv2C+K/d3iVgfn1pnwHzAM2ubeva2zs92tzXtnm9fpOWga+Ac/QTabn7faeMEDWzM4fxi5gXOR/D/Fwb4mWFSn+QAAAABJRU5ErkJggg==" style="width:100px;height:100px" />
                         </div>
                         <div class="col-xs-6 text-right">
                             <address>
-                                <strong>Shipped To:</strong><br>
-                                Jane Smith<br>
-                                1234 Main<br>
-                                Apt. 4B<br>
-                                Springfield, ST 54321
+                                @foreach (var c in Customer)
+                                {
+                                    <strong>CLIENT INFORMATION</strong>
+                                    <p class="mb-2">@c.CustomerName</p>
+                                    <p class="mb-2">@c.Address</p>
+                                    <p class="mb-2">@c.Email</p>
+                                    <p class="mb-2">@c.MobileNumber</p>
+                                }
                             </address>
                         </div>
                     </div>
@@ -116,8 +116,8 @@
         </div>
         <br />
     </div>
-    
-       
+
+
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>

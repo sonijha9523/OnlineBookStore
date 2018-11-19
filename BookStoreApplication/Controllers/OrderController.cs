@@ -128,8 +128,11 @@ namespace BookStoreApplication.Controllers
             List<ProcessOrder> productList = new List<ProcessOrder>();
             BookAppservice.context = HttpContext;
             ProductViewModelCart[] p = BookAppservice.GetFinalProductsFromSession();
-           
-             ViewData["products"] = p;
+            string Cid = HttpContext.Session.GetString("Customer");
+            int CustomerId = Convert.ToInt32(Cid);
+            List<Customer> c = BookAppservice.GetCustomer(CustomerId);
+            ViewData["Customer"] = c;
+            ViewData["products"] = p;
            
             return View();
         }

@@ -15,16 +15,16 @@
         <div class="col-lg-5">
             <form asp-action="SearchBooks" asp-controller="Book" method="post">
                 <div class="form-group">
-                    <select asp-items="@categories" id="selCategory" name="CategoryId" class="form-control">
+                    <select asp-items="@categories" id="selCategory" name="CategoryId" class="form-control" required autofocus>
                         <option value="" selected disabled>--Select Category--</option>
                     </select>
                     <br />
                    
-                    <select id="selSubCategory" name="SubCategoryId" class="form-control"></select>
+                    <select id="selSubCategory" name="SubCategoryId" class="form-control" required></select>
                 </div>
                 <br /><br />
                 <div class="form-group">
-                    <input type="submit" class="btn btn-lg btn-dark" value="Search Products" />
+                    <input type="submit" class="btn btn-lg btn-dark" value="Search Products"/>
                 </div>
             </form>
         </div>
@@ -81,7 +81,6 @@
     <script>
         var myIndex = 0;
         carousel();
-
         function carousel() {
             var i;
             var x = document.getElementsByClassName("mySlides");

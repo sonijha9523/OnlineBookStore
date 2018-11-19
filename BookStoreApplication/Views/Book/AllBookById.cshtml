@@ -6,22 +6,35 @@
    
 }
 <div class="container">
-    <div>
-        <div class="row text-center text-lg-left">
-                @foreach (var obj in Model)
-                {
+    <div class="w3-black" id="tour">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            
+            <h2 class="w3-opacity w3-center"><i>The World belongs to those who read.</i></h2><br>
+            <div class="container">
 
-                    <div class="card card-body text-center border-secondary" style="align-items:center;width: 12rem;margin:10px 10px 10px 10px; padding: 1px 1px 1px 1px;display: table;clear: both;">
-                        <img class="card-img-top" src="@obj.Image" alt="Card image cap" style="margin:5px;width: 100px;height: 150px;">
-                        <h6>@obj.BookTitle</h6>
-                        <h6>@obj.Price</h6>
 
+                <div class="col-md-12">
+                    <div class="row text-center text-lg-left">
+                        <div style="margin:0 -16px;padding:10px">
+                            @foreach (var obj in Model)
+                            {
+
+                                <div class="w3-third w3-margin-bottom" style="padding-right:20px">
+                                    <img src="@obj.Image" alt="New York" style="width:180px;height:260px" class="w3-hover-opacity">
+                                    <div class="w3-container w3-white" style="width:180px">
+                                        <p><b>@obj.BookTitle</b></p>
+                                        <p>Rs. @obj.Price</p>
+                                        @*<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>*@
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
                     </div>
-
-
-                }
+                </div>
+            </div>
         </div>
-
     </div>
+
 </div>
 

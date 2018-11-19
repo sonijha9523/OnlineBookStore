@@ -14,8 +14,7 @@ namespace BookStoreWebServiceTests
     {
         public static int customerId;
         public static int bookId;
-        public static int orderId;
-        public static int OrderDetailId;
+        public static int requestId;
         public static int InvoiceNo;
         BookStoreDBContext context;
         AdminSeviceController controller;
@@ -190,7 +189,8 @@ namespace BookStoreWebServiceTests
             {
                new ReorderLevelDetails() { BookId=201, Quantity=10}
             };
-            var result = controller.UpdateQuantity(obj);
+            var result = controller.UpdateQuantity(obj) as OkObjectResult;
+            requestId = (int)result.Value;
             Assert.IsInstanceOfType(result, typeof(OkObjectResult));
         }
         [TestMethod]
@@ -234,21 +234,6 @@ namespace BookStoreWebServiceTests
             Assert.IsInstanceOfType(result, typeof(OkObjectResult));
 
         }
-        //[TestMethod]
-        //public void RemoveBookRecordTestMethod()
-        //{
-        //    Book obj = new Book
-        //    {
-        //        BookTitle = "Book2",
-        //        BookQuantity = 40,
-        //        Price = 600,
-        //        CategoryId = 404,
-        //        SubCategoryId = 504,
-        //        SupplierId = 1000
-        //    };
-        //    var result = controller.AddNewBook(obj);
-        //    Assert.IsInstanceOfType(result, typeof(OkObjectResult));
-        //}
         [TestMethod]
         public void SearchingBookTestMethod()
         {
@@ -260,14 +245,6 @@ namespace BookStoreWebServiceTests
             var result = controller1.SearchBooks(obj);
             Assert.IsInstanceOfType(result, typeof(OkObjectResult));
         }
-        //[TestCleanup]
-        //public void AccountCreationCleanUp()
-        //{
-           
-        //    var customer = context.Customer.SingleOrDefault(c => c.CustomerId == customerId);
-        //    context.Customer.Remove(customer);
-        //    context.SaveChanges();
-        //}
         [ClassCleanup]
         public static void ClassClean()
         {
@@ -287,6 +264,10 @@ namespace BookStoreWebServiceTests
             context.Payment.Remove(p);
             Orders order = context.Orders.SingleOrDefault(c => c.OrderId == p.OrderId);
             context.Orders.Remove(order);
+            var productorder = context.ProductOrder.SingleOrDefault(c => c.RequestId == requestId);
+            context.ProductOrder.Remove(productorder);
+            var productorderdetails = context.ProductOrderDetails.SingleOrDefault(c => c.RequestId == requestId);
+            context.ProductOrderDetails.Remove(productorderdetails);
             context.SaveChanges();
         }
     }

@@ -127,7 +127,7 @@ namespace BookStoreWebService.Models
                     context.SaveChanges();
                 }
             }
-            return 1 ;
+            return o.RequestId ;
         }
     }
 }

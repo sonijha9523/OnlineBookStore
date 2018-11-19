@@ -31,9 +31,7 @@
             <div class="w3-bar w3-black w3-card">
                 <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
                 <a onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'")" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-                <a onclick="@("window.location.href='" + @Url.Action("Contact", "Home") + "'")" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-                <a onclick="@("window.location.href='" + @Url.Action("About", "Home") + "'")" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-                
+               
                     <a onclick="@("window.location.href='" + @Url.Action("ViewCart", "Order") + "'")" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MY CART<i class="fa fa-shopping-cart" style="font-size:20px;color:white"></i></a>
                     <a onclick="@("window.location.href='" + @Url.Action("UserProfile", "Order") + "'")" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROFILE<i class="fa fa-user-circle-o" style="font-size:20px"></i></a>
                     <a onclick="@("window.location.href='" + @Url.Action("Logout", "Home") + "'")" class="w3-bar-item w3-button w3-padding-large w3-hide-small">LOGOUT</a>

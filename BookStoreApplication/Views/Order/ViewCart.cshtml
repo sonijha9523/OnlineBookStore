@@ -13,13 +13,15 @@
     if (list.Count == 0)
     {
         <div class="container">
-            <div class="row main-div">
+            <div class="row login-form main-div">
                 <div class="col-12">
                     <h1 style="font-size:30px;color:red;text-align:center"><b>Sorry , Cart is Empty!</b></h1>
 
-                    <img src="https://gifimage.net/wp-content/uploads/2017/10/crying-emoji-gif-5.gif" style="width:250px;height:250px;padding:20px 20px 20px 20px" />
+                    <img src="https://media.tenor.com/images/566837eba034cef161f09e090d191bb1/tenor.gif" style="width:250px;height:250px;padding:20px 20px 20px 20px" />
 
-                </div>            
+                </div> 
+                <marquee><h4 style="color:darkred"><i>Hey...don't worry Lets Buy Something..!!!</i></h4></marquee>
+                <button class="btn btn-dark" onclick="@("window.location.href='" + @Url.Action("GetCategory", "Book") + "'")">CONTINUE SHOPPING</button>
                 </div>
         </div>
     }
