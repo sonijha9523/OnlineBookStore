@@ -19,9 +19,9 @@
                             @foreach (var obj in Model)
                             {
 
-                                <div class="w3-third w3-margin-bottom" style="padding-right:20px">
+                                <div class="col-md-3 col-sm-12 col-lg-3">
                                     <img src="@obj.Image" alt="New York" style="width:180px;height:260px" class="w3-hover-opacity">
-                                    <div class="w3-container w3-white" style="width:180px">
+                                    <div class="w3-white" style="width:180px;" >
                                         <p><b>@obj.BookTitle</b></p>
                                         <p>Rs. @obj.Price</p>
                                         @*<button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>*@
