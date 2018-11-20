@@ -10,6 +10,7 @@ using BookStoreLibrary;
 using BookStoreWebService.Models;
 using BookStoreWebService.Models.BookDB;
 using WebApplication2.Models;
+using System.Threading.Tasks;
 
 namespace BookStoreApplication.Controllers
 {
@@ -114,7 +115,7 @@ namespace BookStoreApplication.Controllers
         [HttpGet]
         [HttpPost]
         [ErrorFilter]
-        public IActionResult Payment()
+        public async Task<IActionResult> Payment()
         {
             try
             {
@@ -131,7 +132,7 @@ namespace BookStoreApplication.Controllers
             ProductViewModelCart[] p = BookAppservice.GetFinalProductsFromSession();
             string Cid = HttpContext.Session.GetString("Customer");
             int CustomerId = Convert.ToInt32(Cid);
-            List<Customer> c = BookAppservice.GetCustomerDetail(CustomerId);
+            List<Customer> c = await BookAppservice.GetCustomerDetail(CustomerId);
             ViewData["Customer"] = c;
             ViewData["products"] = p;
            
@@ -164,7 +165,7 @@ namespace BookStoreApplication.Controllers
         [HttpGet]
         [HttpPost]
         [ErrorFilter]
-        public IActionResult Success(string PayMode)
+        public async Task<IActionResult> Success(string PayMode)
         {
             int InvoiceId;
             try
@@ -180,10 +181,10 @@ namespace BookStoreApplication.Controllers
             List<ProcessOrder> productList = new List<ProcessOrder>();
             BookAppservice.context = HttpContext;
             ProductViewModelCart[] p = BookAppservice.GetFinalProductsFromSession();
-            InvoiceId = BookAppservice.SaveDetails(p,PayMode);
+            InvoiceId = await BookAppservice.SaveDetails(p,PayMode);
             string Cid = HttpContext.Session.GetString("Customer");
             int CustomerId = Convert.ToInt32(Cid);
-            List<Customer> c = BookAppservice.GetCustomerDetail(CustomerId);
+            List<Customer> c =await  BookAppservice.GetCustomerDetail(CustomerId);
             ViewData["Customer"] = c;
             ViewData["products"] = p;
             ViewData["Invoice"] = InvoiceId;
@@ -194,7 +195,7 @@ namespace BookStoreApplication.Controllers
         }
         [HttpGet]
         [ErrorFilter]
-        public IActionResult UserProfile()
+        public async Task<IActionResult> UserProfile()
         {
            
             try
@@ -209,7 +210,7 @@ namespace BookStoreApplication.Controllers
             }
             string Cid = HttpContext.Session.GetString("Customer");
             int CustomerId = Convert.ToInt32(Cid);
-            List<Customer> c = BookAppservice.GetCustomerDetail(CustomerId);
+            List<Customer> c = await BookAppservice.GetCustomerDetail(CustomerId);
             ViewData["Customer"] = c;
             return View();
         }

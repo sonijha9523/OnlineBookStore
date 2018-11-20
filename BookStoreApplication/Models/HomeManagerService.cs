@@ -7,6 +7,7 @@ using System.Text;
 
 using BookStoreLibrary;
 using BookStoreWebService.Models.BookDB;
+using System.Threading.Tasks;
 
 namespace BookStoreApplication.Models
 {
@@ -21,12 +22,12 @@ namespace BookStoreApplication.Models
 
         }
         
-        public int AddRecord(Customer c)
+        public async Task<int> AddRecord(Customer c)
         {
            
                 string json = JsonConvert.SerializeObject(c);
             HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage message = client.PostAsync("AdminService/AddNew", content).Result;
+            HttpResponseMessage message = await client.PostAsync("AdminService/AddNew", content);
             if (message.IsSuccessStatusCode == true)
             {
                 return 1;
@@ -36,16 +37,16 @@ namespace BookStoreApplication.Models
                 return 0;
             }
         }
-        public int ValidateUser(Credentials credentials)
+        public async Task<int> ValidateUser(Credentials credentials)
         {
             string customerId;
             string json = JsonConvert.SerializeObject(credentials);
             HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage message = client.PostAsync("AdminService/Authentication", content).Result;
+            HttpResponseMessage message = await client.PostAsync("AdminService/Authentication", content);
             if (message.IsSuccessStatusCode == true)
             {
                 byte[] ary;
-                customerId = message.Content.ReadAsStringAsync().Result;
+                customerId = await message.Content.ReadAsStringAsync();
                 bool isavailable = context.Session.TryGetValue("Customer", out ary);
                 if (isavailable == false)
                 {
@@ -59,13 +60,13 @@ namespace BookStoreApplication.Models
             }
         }
 
-        public int ValidateAdmin(Credentials credentials)
+        public async Task<int> ValidateAdmin(Credentials credentials)
         {
             
             string customerId;
             string json = JsonConvert.SerializeObject(credentials);
             HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage message = client.PostAsync("AdminService/AuthenticationAdmin", content).Result;
+            HttpResponseMessage message = await client.PostAsync("AdminService/AuthenticationAdmin", content);
             if (message.IsSuccessStatusCode == true)
             {
                 customerId = message.Content.ReadAsStringAsync().Result;
@@ -79,21 +80,18 @@ namespace BookStoreApplication.Models
 
 
 
-        public void AddBookRecord(Book b)
+        public async Task AddBookRecord(Book b)
         {
             string json = JsonConvert.SerializeObject(b);
             HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage message = client.PostAsync("AdminService/AddNewBook", content).Result;
-            if (message.IsSuccessStatusCode == true)
-            {
-
-            }
+            HttpResponseMessage message = await client.PostAsync("AdminService/AddNewBook", content);
+      
         }
-        public int RemoveBookRecord(int id)
+        public async Task<int> RemoveBookRecord(int id)
         {
             string json = JsonConvert.SerializeObject(id);
             HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage message = client.PostAsync("AdminService/RemoveBook", content).Result;
+            HttpResponseMessage message = await client.PostAsync("AdminService/RemoveBook", content);
             if (message.IsSuccessStatusCode == true)
             {
                 return 1;
@@ -102,49 +100,48 @@ namespace BookStoreApplication.Models
                 return 0;
         }
        
-        public void EditBookRecord(Book b)
+        public async Task EditBookRecord(Book b)
         {
             string json = JsonConvert.SerializeObject(b);
             HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage message = client.PostAsync("AdminService/EditNewBook", content).Result;
-            if (message.IsSuccessStatusCode == true)
-            {
-
-            }
+            HttpResponseMessage message = await client.PostAsync("AdminService/EditNewBook", content);
+           
         }
-        public List<Book> GetAllBooks()
+        public async Task<List<Book>> GetAllBooks()
         {
 
-            HttpResponseMessage message = client.PostAsync("AdminService/AllBooks", null).Result;
+            HttpResponseMessage message =await client.PostAsync("AdminService/AllBooks", null);
 
             if (message.IsSuccessStatusCode == true)
             {
-                string json = message.Content.ReadAsStringAsync().Result.ToString();
+                var result= await message.Content.ReadAsStringAsync();
+                string json = result.ToString();
                 List<Book> allcategory = JsonConvert.DeserializeObject<List<Book>>(json);
                 return allcategory;
             }
             else
                 return null; ;
         }
-        public List<Book> ReorderLevel()
+        public async Task<List<Book>> ReorderLevel()
         {
 
-            HttpResponseMessage message = client.PostAsync("AdminService/ReorderLevel", null).Result;
+            HttpResponseMessage message = await client.PostAsync("AdminService/ReorderLevel", null);
 
             if (message.IsSuccessStatusCode == true)
             {
-                string json = message.Content.ReadAsStringAsync().Result.ToString();
+                var result= message.Content.ReadAsStringAsync().Result.ToString();
+                string json = result.ToString();
                 List<Book> book = JsonConvert.DeserializeObject<List<Book>>(json);
                 return book;
             }
             else
                 return null; ;
         }
-        public int UpdateQuantity(ReorderLevelDetails[] r)
+        public async Task<int> UpdateQuantity(ReorderLevelDetails[] r)
         {
             string json = JsonConvert.SerializeObject(r);
             HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage message = client.PostAsync("AdminService/UpdateQuantities", content).Result;
+            HttpResponseMessage message = await client.PostAsync("AdminService/UpdateQuantities", content);
             if (message.IsSuccessStatusCode == true)
             {
                 return 1;

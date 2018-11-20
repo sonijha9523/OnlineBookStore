@@ -12,6 +12,7 @@ using BookStoreApplication.Models;
 using BookStoreLibrary;
 using BookStoreWebService.Models;
 using BookStoreWebService.Models.BookDB;
+using System.Threading.Tasks;
 
 namespace BookStoreApplication.Controllers
 {
@@ -71,7 +72,7 @@ namespace BookStoreApplication.Controllers
             return View();
         }
         [ErrorFilter]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             try
             {
@@ -83,11 +84,11 @@ namespace BookStoreApplication.Controllers
                 log.LogCritical(e.Message);
                 log.LogInformation("Executed GetBooks Method..");
             }
-            List<Book> AllBookList = serviceBook.GetAllBooks();
+            List<Book> AllBookList = await serviceBook.GetAllBooks();
             return View(AllBookList);
         }
         [ErrorFilter]
-        public IActionResult GetBooks()
+        public async Task<IActionResult> GetBooks()
         {
             try
             {
@@ -99,11 +100,11 @@ namespace BookStoreApplication.Controllers
                 log.LogCritical(e.Message);
                 log.LogInformation("Executed GetBooks Method..");
             }
-            List<Book> AllBookList = serviceBook.GetAllBooks();       
+            List<Book> AllBookList = await serviceBook.GetAllBooks();       
             return View(AllBookList);
         }
         [ErrorFilter]
-        public IActionResult GetCategory()
+        public async Task<IActionResult> GetCategory()
         {
             try {
                 log.LogInformation("Executing GetCategory method");
@@ -114,21 +115,21 @@ namespace BookStoreApplication.Controllers
                 log.LogInformation("Executed GetCategory Method..");
             }
             
-            var resultlist = serviceBook.SelectCategory();
+            var resultlist = await serviceBook.SelectCategory();
             SelectList list = new SelectList(resultlist, "CategoryId", "CategoryTitle");
             ViewBag.Categories = list;
             return View();
         }
         [HttpPost][HttpGet]
-        public IActionResult ViewBook(int id)
+        public async Task<IActionResult> ViewBook(int id)
         {
           serviceBook.context = HttpContext;
-          List<Book> obj=  serviceBook.GetBookById(id);
+          List<Book> obj=  await serviceBook.GetBookById(id);
             return View("ViewBook",obj);
 
         }
         [ErrorFilter]
-        public IActionResult AllBook()
+        public async Task<IActionResult> AllBook()
         {
             try
             {
@@ -140,11 +141,11 @@ namespace BookStoreApplication.Controllers
                 log.LogCritical(e.Message);
                 log.LogInformation("Executed GetBooks Method..");
             }
-            List<Book> AllBookList = serviceBook.GetAllBooks();
+            List<Book> AllBookList = await serviceBook.GetAllBooks();
             return View(AllBookList);
         }
         [ErrorFilter]
-        public IActionResult AllBookById(int cid)
+        public async Task<IActionResult> AllBookById(int cid)
         {
             try
             {
@@ -156,7 +157,7 @@ namespace BookStoreApplication.Controllers
                 log.LogCritical(e.Message);
                 log.LogInformation("Executed GetBooks Method..");
             }
-            List<Book> AllBookList = serviceBook.GetAllBookById(cid);
+            List<Book> AllBookList = await serviceBook.GetAllBookById(cid);
             return View(AllBookList);
         }
 

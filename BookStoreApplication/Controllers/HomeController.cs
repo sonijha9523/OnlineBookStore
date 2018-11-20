@@ -8,6 +8,7 @@ using BookStoreApplication.Models;
 using BookStoreLibrary;
 using BookStoreWebService.Models;
 using BookStoreWebService.Models.BookDB;
+using System.Threading.Tasks;
 
 namespace BookStoreApplication.Controllers
 {
@@ -28,7 +29,7 @@ namespace BookStoreApplication.Controllers
             
         }
         [HttpGet][HttpPost]
-        public IActionResult Index(int id)
+        public async Task<IActionResult> Index(int id)
         {
             List<Book> AllBookList;
 
@@ -47,12 +48,12 @@ namespace BookStoreApplication.Controllers
 
             if (id>0)
             {
-                AllBookList = serviceBook.GetAllBookById(id);
+                AllBookList = await serviceBook.GetAllBookById(id);
                 return View(AllBookList);
             }
             else
             {
-                AllBookList = serviceBook.GetAllBooks();
+                AllBookList =  await serviceBook.GetAllBooks();
                 return View(AllBookList);
             }
             
@@ -65,9 +66,9 @@ namespace BookStoreApplication.Controllers
         }
         [HttpPost]
         [ErrorFilter]
-        public IActionResult Register(Customer c)
+        public async Task<IActionResult> Register(Customer c)
         {
-            var result=service.AddRecord(c);
+            var result= await service.AddRecord(c);
             if (result == 0)
             {
                 ModelState.AddModelError("Email", "EmailId already Exist.. Try with another EmailId...");
@@ -92,7 +93,7 @@ namespace BookStoreApplication.Controllers
         }
         [HttpPost]
       
-        public IActionResult Login(Credentials credentials)
+        public async Task<IActionResult> Login(Credentials credentials)
         {
             try
             {
@@ -107,7 +108,7 @@ namespace BookStoreApplication.Controllers
 
 
             service.context = HttpContext;
-            int result = service.ValidateUser(credentials);
+            int result = await service.ValidateUser(credentials);
       
             if (result == 0)
             {
@@ -118,7 +119,7 @@ namespace BookStoreApplication.Controllers
             return RedirectToAction("GetCategory","Book", new { area = "" });
 
         }
-        public IActionResult LoginAdmin(Credentials credentials)
+        public async Task<IActionResult> LoginAdmin(Credentials credentials)
         {
             try
             {
@@ -133,7 +134,7 @@ namespace BookStoreApplication.Controllers
 
 
             service.context = HttpContext;
-            int result = service.ValidateAdmin(credentials);
+            int result = await service.ValidateAdmin(credentials);
 
             if (result == 0)
             {
@@ -149,7 +150,7 @@ namespace BookStoreApplication.Controllers
         }
         [HttpPost]
 
-        public IActionResult AddBook(Book b)
+        public async Task<IActionResult> AddBook(Book b)
         {
             try
             {
@@ -162,15 +163,15 @@ namespace BookStoreApplication.Controllers
                 log.LogInformation("Executed GetCategoy Method..");
             }
 
-            service.AddBookRecord(b);
+            await service.AddBookRecord(b);
             service.context = HttpContext;
             return RedirectToAction("AddBook");
         }
         [HttpGet]
         [ErrorFilter]
-        public IActionResult RemoveBook(int id)
+        public async Task<IActionResult> RemoveBook(int id)
         {
-            service.RemoveBookRecord(id);
+            await service.RemoveBookRecord(id);
             return RedirectToAction("GetBooks");
         }
         [ErrorFilter]
@@ -183,9 +184,9 @@ namespace BookStoreApplication.Controllers
         {
            return View();
         }
-        public IActionResult GetBooks()
+        public async Task<IActionResult> GetBooks()
         {
-            List<Book> AllBookList = service.GetAllBooks();
+            List<Book> AllBookList = await service.GetAllBooks();
             
             return View(AllBookList);
         }
@@ -201,7 +202,7 @@ namespace BookStoreApplication.Controllers
             return View();
         }
         [ErrorFilter]
-        public IActionResult ReorderLevel()
+        public async Task<IActionResult> ReorderLevel()
         {
             try
             {
@@ -213,13 +214,13 @@ namespace BookStoreApplication.Controllers
                 log.LogCritical(e.Message);
                 log.LogInformation("Executed GetBooks Method..");
             }
-            List<Book> AllBookList = service.ReorderLevel();
+            List<Book> AllBookList = await service.ReorderLevel();
             ViewData["Books"] = AllBookList;
             return View();
         }
-        public IActionResult UpdateQuantity(ReorderLevelDetails[] r)
+        public async Task<IActionResult> UpdateQuantity(ReorderLevelDetails[] r)
         {
-            service.UpdateQuantity(r);
+           await  service.UpdateQuantity(r);
             return RedirectToAction("ReorderLevel"); ;
         }
         public IActionResult Logout()

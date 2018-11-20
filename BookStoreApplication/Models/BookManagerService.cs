@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 
 using BookStoreWebService.Models.BookDB;
+using System.Threading.Tasks;
 
 namespace BookStoreApplication.Models
 {
@@ -18,13 +19,16 @@ namespace BookStoreApplication.Models
             client.BaseAddress = new Uri("http://localhost:64966/");
 
         }
-        public List<Category> SelectCategory()
+        public async Task<List<Category>> SelectCategory()
         {
-            HttpResponseMessage message = client.PostAsync("BookService/SelCategory", null).Result;
+            HttpResponseMessage message =  await client.PostAsync("BookService/SelCategory", null);
 
             if (message.IsSuccessStatusCode == true)
             {
-                string json = message.Content.ReadAsStringAsync().Result.ToString();
+                var result = await message.Content.ReadAsStringAsync();
+                string json = result.ToString();
+
+                   
                 List<Category> allcategory = JsonConvert.DeserializeObject<List<Category>>(json);
                 return allcategory;
             }
@@ -32,14 +36,15 @@ namespace BookStoreApplication.Models
                 return null;
         }
      
-        public List<Book> GetAllBooks()
+        public async Task<List<Book>> GetAllBooks()
         {
 
-            HttpResponseMessage message = client.PostAsync("BookService/AllBooks", null).Result;
+            HttpResponseMessage message = await client.PostAsync("BookService/AllBooks", null);
 
             if (message.IsSuccessStatusCode == true)
             {
-                string json = message.Content.ReadAsStringAsync().Result.ToString();
+              var result = await message.Content.ReadAsStringAsync();
+                string json = result.ToString();
                 List<Book> allcategory = JsonConvert.DeserializeObject<List<Book>>(json);
                 return allcategory;
             }
@@ -47,13 +52,14 @@ namespace BookStoreApplication.Models
                 return null; ;
         }
    
-        public List<Book> GetBookById(int id)
+        public async Task<List<Book>> GetBookById(int id)
         {
-            HttpResponseMessage message = client.PostAsync("BookService/GetBookById/?id=" + id, null).Result;
+            HttpResponseMessage message = await client.PostAsync("BookService/GetBookById/?id=" + id, null);
 
             if (message.IsSuccessStatusCode == true)
             {
-                string json = message.Content.ReadAsStringAsync().Result.ToString();
+                var result= message.Content.ReadAsStringAsync();
+                string json = result.ToString();
               List<Book> obj = JsonConvert.DeserializeObject<List<Book>>(json);
                 return obj;
             }
@@ -61,13 +67,14 @@ namespace BookStoreApplication.Models
                 return null; ;
 
         }
-        public List<Book> GetAllBookById(int id)
+        public async Task<List<Book>> GetAllBookById(int id)
         {
-            HttpResponseMessage message = client.PostAsync("BookService/GetAllBookByCat/?id=" + id, null).Result;
+            HttpResponseMessage message = await client.PostAsync("BookService/GetAllBookByCat/?id=" + id, null);
 
             if (message.IsSuccessStatusCode == true)
             {
-                string json = message.Content.ReadAsStringAsync().Result.ToString();
+               var result =message.Content.ReadAsStringAsync();
+                string json = result.ToString();
                 List<Book> obj = JsonConvert.DeserializeObject<List<Book>>(json);
                 return obj;
             }

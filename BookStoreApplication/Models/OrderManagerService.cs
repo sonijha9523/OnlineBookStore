@@ -8,6 +8,8 @@ using System.Text;
 
 using BookStoreLibrary;
 using BookStoreWebService.Models.BookDB;
+using System.Threading.Tasks;
+
 namespace BookStoreApplication.Models
 {
     public class OrderManagerService
@@ -107,7 +109,7 @@ namespace BookStoreApplication.Models
             ProductViewModelCart[] products = JsonConvert.DeserializeObject<ProductViewModelCart[]>(json);
             return products;
         }
-        public int SaveDetails(ProductViewModelCart[] p, string PayMode)
+        public async Task<int> SaveDetails(ProductViewModelCart[] p, string PayMode)
         {
             string InvoiceId;
             string Cid = context.Session.GetString("Customer");
@@ -117,10 +119,10 @@ namespace BookStoreApplication.Models
             order.products = p;
             string json = JsonConvert.SerializeObject(order);
             HttpContent content = new StringContent(json, Encoding.UTF8, "application/json");
-            HttpResponseMessage message = client.PostAsync("OrderService/AddOrder", content).Result;
+            HttpResponseMessage message = await client.PostAsync("OrderService/AddOrder", content);
             if (message.IsSuccessStatusCode == true)
             {
-                InvoiceId = message.Content.ReadAsStringAsync().Result;
+                InvoiceId = await message.Content.ReadAsStringAsync();
                 return Convert.ToInt32(InvoiceId);
             }
             else
@@ -128,13 +130,14 @@ namespace BookStoreApplication.Models
                 return 0;
             }
         }
-        public List<Customer> GetCustomerDetail(int CustomerId)
+        public async Task<List<Customer>> GetCustomerDetail(int CustomerId)
         {
-            HttpResponseMessage message = client.PostAsync("OrderService/GetCustomer/?id=" + CustomerId, null).Result;
+            HttpResponseMessage message = await client.PostAsync("OrderService/GetCustomer/?id=" + CustomerId, null);
 
             if (message.IsSuccessStatusCode == true)
             {
-                string json = message.Content.ReadAsStringAsync().Result.ToString();
+               var result = message.Content.ReadAsStringAsync();
+                string json = result.ToString();
                 List<Customer> obj = JsonConvert.DeserializeObject<List<Customer>>(json);
                 return obj;
             }
