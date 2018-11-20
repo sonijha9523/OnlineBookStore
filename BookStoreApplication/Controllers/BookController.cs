@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using BookStoreApplication.Models;
-using BookStoreLibrary;
-using BookStoreWebService.Models;
-using BookStoreWebService.Models.BookDB;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+
 using WebApplication2.Models;
+using BookStoreApplication.Models;
+using BookStoreLibrary;
+using BookStoreWebService.Models;
+using BookStoreWebService.Models.BookDB;
 
 namespace BookStoreApplication.Controllers
 {

@@ -1,13 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using BookStoreApplication.Models;
-using BookStoreLibrary;
-using BookStoreWebService.Models;
-using BookStoreWebService.Models.BookDB;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+
+using BookStoreApplication.Models;
+using BookStoreLibrary;
+using BookStoreWebService.Models;
+using BookStoreWebService.Models.BookDB;
 using WebApplication2.Models;
 
 namespace BookStoreApplication.Controllers
@@ -38,7 +39,7 @@ namespace BookStoreApplication.Controllers
             
             BookAppservice.context = HttpContext;
 
-            BookAppservice.AddToCart(model);
+            BookAppservice.AddToCartDetailsInSession(model);
 
             string json = HttpContext.Session.GetString("CatSubCat");
             SubCategory subcategory = JsonConvert.DeserializeObject<SubCategory>(json);
@@ -52,7 +53,7 @@ namespace BookStoreApplication.Controllers
         {
 
             BookAppservice.context = HttpContext;
-            List<ProductViewModelCart> result = BookAppservice.ProductCart();
+            List<ProductViewModelCart> result = BookAppservice.FetchBooksFromCart();
             try
             {
                 if (result.Capacity>0)
@@ -84,7 +85,7 @@ namespace BookStoreApplication.Controllers
         public IActionResult UpdateCart(int id)
         {
             BookAppservice.context = HttpContext;
-            BookAppservice.UpdateCart(id);
+            BookAppservice.UpdateCartInSession(id);
           return   RedirectToAction("ViewCart");
         }
         [HttpGet]
@@ -130,7 +131,7 @@ namespace BookStoreApplication.Controllers
             ProductViewModelCart[] p = BookAppservice.GetFinalProductsFromSession();
             string Cid = HttpContext.Session.GetString("Customer");
             int CustomerId = Convert.ToInt32(Cid);
-            List<Customer> c = BookAppservice.GetCustomer(CustomerId);
+            List<Customer> c = BookAppservice.GetCustomerDetail(CustomerId);
             ViewData["Customer"] = c;
             ViewData["products"] = p;
            
@@ -182,7 +183,7 @@ namespace BookStoreApplication.Controllers
             InvoiceId = BookAppservice.SaveDetails(p,PayMode);
             string Cid = HttpContext.Session.GetString("Customer");
             int CustomerId = Convert.ToInt32(Cid);
-            List<Customer> c = BookAppservice.GetCustomer(CustomerId);
+            List<Customer> c = BookAppservice.GetCustomerDetail(CustomerId);
             ViewData["Customer"] = c;
             ViewData["products"] = p;
             ViewData["Invoice"] = InvoiceId;
@@ -208,7 +209,7 @@ namespace BookStoreApplication.Controllers
             }
             string Cid = HttpContext.Session.GetString("Customer");
             int CustomerId = Convert.ToInt32(Cid);
-            List<Customer> c = BookAppservice.GetCustomer(CustomerId);
+            List<Customer> c = BookAppservice.GetCustomerDetail(CustomerId);
             ViewData["Customer"] = c;
             return View();
         }

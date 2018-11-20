@@ -1,13 +1,7 @@
-﻿using BookStoreWebService.Controllers;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Net;
-using System.Threading.Tasks;
+
 using BookStoreWebService.Models.BookDB;
-using BookStoreLibrary;
-using System.Net.Http;
 
 namespace BookStoreWebService.Models
 {

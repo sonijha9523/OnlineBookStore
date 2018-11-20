@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+
+using WebApplication2.Models;
 using BookStoreApplication.Models;
 using BookStoreLibrary;
 using BookStoreWebService.Models;
 using BookStoreWebService.Models.BookDB;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.Extensions.Logging;
-using WebApplication2.Models;
 
 namespace BookStoreApplication.Controllers
 {

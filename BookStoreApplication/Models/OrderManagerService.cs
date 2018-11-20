@@ -1,14 +1,13 @@
-﻿using BookStoreLibrary;
-using BookStoreWebService.Models.BookDB;
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
 
+using BookStoreLibrary;
+using BookStoreWebService.Models.BookDB;
 namespace BookStoreApplication.Models
 {
     public class OrderManagerService
@@ -21,7 +20,7 @@ namespace BookStoreApplication.Models
             client.BaseAddress = new Uri("http://localhost:64966/");
 
         }
-        public void AddToCart(ProductViewModel model)
+        public void AddToCartDetailsInSession(ProductViewModel model)
         {
             List<ProductViewModel> serializedObjects;
             string json = "";
@@ -47,7 +46,7 @@ namespace BookStoreApplication.Models
             }
 
         }
-        public List<ProductViewModelCart> ProductCart()
+        public List<ProductViewModelCart> FetchBooksFromCart()
 
         {
 
@@ -70,7 +69,7 @@ namespace BookStoreApplication.Models
 
             return result.Distinct().ToList();
         }
-        public void UpdateCart(int id)
+        public void UpdateCartInSession(int id)
         {
             string json = "";
             byte[] ary;
@@ -129,7 +128,7 @@ namespace BookStoreApplication.Models
                 return 0;
             }
         }
-        public List<Customer> GetCustomer(int CustomerId)
+        public List<Customer> GetCustomerDetail(int CustomerId)
         {
             HttpResponseMessage message = client.PostAsync("OrderService/GetCustomer/?id=" + CustomerId, null).Result;
 

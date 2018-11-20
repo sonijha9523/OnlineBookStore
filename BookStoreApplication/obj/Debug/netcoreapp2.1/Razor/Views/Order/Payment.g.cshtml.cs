@@ -86,12 +86,12 @@ using BookStoreWebService.Models.BookDB;
             WriteLiteral("\r\n\r\n<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(444, 424, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "45b2f8d938c148e68f3fa8367afc6a55", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "028657bf6d2d4640b6f9a0a46fc86b7d", async() => {
                 BeginContext(450, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(456, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "aa667abaa9c147fab84992dfe4149e45", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "d5dc5becd30344dcab8b9ea4fcdd5e6e", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -131,7 +131,7 @@ using BookStoreWebService.Models.BookDB;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(870, 11919, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1b588d5d79c4444eb72a029e95ed14b6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bbe2bf8736314404ae7379ca1a254545", async() => {
                 BeginContext(891, 7693, true);
                 WriteLiteral(@"
 
@@ -356,7 +356,7 @@ WriteAttributeValue("", 12393, "window.location.href='" + @Url.Action("Pay", "Or
                 WriteLiteral(">PAY</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <br />\r\n    </div>\r\n\r\n\r\n\r\n    ");
                 EndContext();
                 BeginContext(12570, 51, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4cfca9781fed4fbbba120b25aaf6bb7e", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c6a8959e749248a0bf95f7cf40532070", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
